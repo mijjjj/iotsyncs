@@ -1,8 +1,8 @@
-# HotGo-V2
+# IoTSyncs-V2
 <div align="center">
-	<img width="140px" src="https://bufanyun.cn-bj.ufileos.com/hotgo/logo.sig.png">
+	<img width="140px" src="https://bufanyun.cn-bj.ufileos.com/IoTSyncs/logo.sig.png">
     <p>
-        <h1>HotGo V2</h1>
+        <h1>IoTSyncs V2</h1>
     </p>
     <p align="center">
         <a href="https://goframe.org/pages/viewpage.action?pageId=1114119" target="_blank">
@@ -20,7 +20,7 @@
 		<a href="https://vitejs.dev/" target="_blank">
 		    <img src="https://img.shields.io/badge/vite-%3E2.0.0-yellow" alt="vite">
 		</a>
-		<a href="https://github.com/bufanyun/hotgo/blob/v2.0/LICENSE" target="_blank">
+		<a href="https://github.com/bufanyun/IoTSyncs/blob/v2.0/LICENSE" target="_blank">
 		    <img src="https://img.shields.io/badge/license-MIT-success" alt="license">
 		</a>
 	</p>
@@ -32,7 +32,7 @@
 * 前端采用Naive-Ui-Admin、Vue、Naive UI、UinApp。
 
 ## 演示地址
--  [https://hotgo.facms.cn/admin](https://hotgo.facms.cn/admin)
+-  [https://IoTSyncs.facms.cn/admin](https://IoTSyncs.facms.cn/admin)
 >  账号：admin  密码：123456
 
 ### 使用文档
@@ -76,34 +76,6 @@
 23. 常用工具：集成常用的工具包和命令行工具，可以快速开发自定义命令行，多种启动入口。
 
 
-> HotGo开源以来得到了大家的很多支持，本项目初衷只为互相学习交流，没有任何盈利性目的！欢迎为HotGo贡献代码或提供建议！
-
-
-## 演示图
-
-<table>
-    <tr>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/1.png"/></td>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/2.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/3.png"/></td>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/4.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/5.png"/></td>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/6.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/7.png"/></td>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/8.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/9.png"/></td>
-        <td><img src="https://bufanyun.cn-bj.ufileos.com/hotgo/example/10.png"/></td>
-    </tr>
-</table>
-
 ## 感谢(排名不分先后)
 > gf框架 [https://github.com/gogf/gf](https://github.com/gogf/gf)
 >
@@ -120,46 +92,38 @@
 
 
 ## 交流QQ群
-交流群①：190966648  <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=mJafkvme3VNyiQlCFIFNRtY8Xlr7pj9U&jump_from=webapi&authKey=jL10vIESr+vO8wpxwyd6DlChzkrbHpzN9uhAsIHgAinL/Vvd+nvuRyilf2UqUlCy"><img border="0" src="https://bufanyun.cn-bj.ufileos.com/hotgo/group.png" alt="HotGo框架交流1群" title="HotGo框架交流1群"></a>
-> <img src="https://bufanyun.cn-bj.ufileos.com/hotgo/hotgo1qun.png" width="400px"/>  
+交流群①：826069588 
 
-
-> 感谢你使用HotGo，公司团队精力时间有限，因此我们不再提供免费的技术服务！
+> 感谢你使用IoTSyncs，团队精力时间有限，因此我们不再提供免费的技术服务！
 >
 > 同时您也可以联系我们，雇佣我们团队为您干活，谢谢合作！
 
 
 ## 商用说明
 
-> HotGo 是开源免费的，遵循 MIT 开源协议，意味着您无需支付任何费用，也无需授权，即可将它应用到您的产品中。
+> IoTSyncs 是开源免费的，遵循 MIT 开源协议，意味着您无需支付任何费用，也无需授权，即可将它应用到您的产品中。
 
 * 使用本项目必须保留所有版权信息。
 
 * 本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-* 版权所有Copyright © 2020-2023 by Ms (https://github.com/bufanyun/hotgo)
+* 版权所有Copyright © 2020-2023 by Ms (https://github.com/mijjjj/iotsyncs)
 
 * All rights reserved。
 
+## 免责声明
 
-## 免责声明：
-* HotGo为开源学习项目，一切商业行为与HotGo无关。
+* IoTSyncs为开源学习项目，一切商业行为与IoTSyncs无关。
 
-* 用户不得利用HotGo从事非法行为，用户应当合法合规的使用，发现用户在使用产品时有任何的非法行为，HotGo有权配合有关机关进行调查或向政府部门举报，HotGo不承担用户因非法行为造成的任何法律责任，一切法律责任由用户自行承担，如因用户使用造成第三方损害的，用户应当依法予以赔偿。
+* 用户不得利用IoTSyncs从事非法行为，用户应当合法合规的使用，发现用户在使用产品时有任何的非法行为，IoTSyncs有权配合有关机关进行调查或向政府部门举报，IoTSyncs不承担用户因非法行为造成的任何法律责任，一切法律责任由用户自行承担，如因用户使用造成第三方损害的，用户应当依法予以赔偿。
 
-* 所有与使用HotGo相关的资源直接风险均由用户承担。
-
+* 所有与使用IoTSyncs相关的资源直接风险均由用户承担。
 
 #### 如果对您有帮助，您可以点右上角 💘Star💘支持
 
 
-
-## [感谢JetBrains提供的免费GoLand](https://jb.gg/OpenSource)
-[![avatar](https://camo.githubusercontent.com/323657c6e81419b8e151e9da4c71f409e3fcc65d630535170c59fe4807dbc905/68747470733a2f2f676f6672616d652e6f72672f646f776e6c6f61642f7468756d626e61696c732f313131343131392f6a6574627261696e732e706e67)](https://jb.gg/OpenSource)
-
-
 ## License
-[MIT © HotGo-2023](./LICENSE)
+[MIT © IoTSyncs-2023](./LICENSE)
   
 
 
