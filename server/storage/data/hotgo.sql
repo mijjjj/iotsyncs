@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_addon_hgexample_table`
+-- 表的结构 `addon_hgexample_table`
 --
 
-CREATE TABLE `hg_addon_hgexample_table` (
+CREATE TABLE `addon_hgexample_table` (
   `id` bigint(20) NOT NULL COMMENT 'ID',
   `category_id` bigint(20) NOT NULL COMMENT '分类ID',
   `flag` json DEFAULT NULL COMMENT '标签',
@@ -69,20 +69,20 @@ CREATE TABLE `hg_addon_hgexample_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='插件_案例_表格';
 
 --
--- 转存表中的数据 `hg_addon_hgexample_table`
+-- 转存表中的数据 `addon_hgexample_table`
 --
 
-INSERT INTO `hg_addon_hgexample_table` (`id`, `category_id`, `flag`, `title`, `description`, `content`, `image`, `images`, `attachfile`, `attachfiles`, `map`, `star`, `price`, `views`, `activity_at`, `start_at`, `end_at`, `switch`, `sort`, `avatar`, `sex`, `qq`, `email`, `mobile`, `hobby`, `channel`, `city_id`, `pid`, `level`, `tree`, `remark`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `addon_hgexample_table` (`id`, `category_id`, `flag`, `title`, `description`, `content`, `image`, `images`, `attachfile`, `attachfiles`, `map`, `star`, `price`, `views`, `activity_at`, `start_at`, `end_at`, `switch`, `sort`, `avatar`, `sex`, `qq`, `email`, `mobile`, `hobby`, `channel`, `city_id`, `pid`, `level`, `tree`, `remark`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, '[1, 2]', '测试标题', '描述', '<p>这是内容............</p>', 'http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqamvhlq4w3ki6bl.webp', '[\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqap5l9brk2lkavu.jpg\", \"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqaqua7fw8ukbbp5.jpg\"]', 'http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqaup19k9oznyixz.doc', '[\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqawg96ba4cuezvv.xlsx\", \"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqaup19k9oznyixz.doc\"]', '[{\"key\": \"qwe\", \"value\": \"123\"}, {\"key\": \"asd\", \"value\": \"456\"}]', '3.0', '88.00', 10, '2022-12-23', '2022-12-01 00:00:00', '2022-12-31 23:59:59', 1, 20, '', 15, '133814250', '133814250@qq.com', '15303830571', '[3, 2, 1]', 1, 140406, 0, 1, '', '备注！', 1, 1, 3, '2022-12-15 19:30:14', '2023-04-28 16:46:17', NULL),
 (2, 0, '[1]', '测试2', '描述', '<h2><strong>不知道写点啥！</strong></h2><p><br></p><p><img src=\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqbknawlkgdttuxl.png\"></p>', 'http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqbmxmtaq06gbnqa.jpeg', '[\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqborf529kf4cxbm.jpeg\"]', 'http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqawg96ba4cuezvv.xlsx', '[\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdqaup19k9oznyixz.doc\"]', '{}', '2.5', '10.00', 0, '2023-02-18', NULL, NULL, 2, 30, '', 0, '', '1561561@qq.com', '15303830571', '[2, 1]', 3, 140214, 0, 1, '', '', 1, 1, 1, '2023-02-06 14:17:11', '2023-02-23 13:59:01', NULL);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_cash`
+-- 表的结构 `admin_cash`
 --
 
-CREATE TABLE `hg_admin_cash` (
+CREATE TABLE `admin_cash` (
   `id` bigint(20) NOT NULL COMMENT 'ID',
   `member_id` bigint(20) NOT NULL COMMENT '管理员ID',
   `money` decimal(10,2) NOT NULL COMMENT '提现金额',
@@ -98,10 +98,10 @@ CREATE TABLE `hg_admin_cash` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_credits_log`
+-- 表的结构 `admin_credits_log`
 --
 
-CREATE TABLE `hg_admin_credits_log` (
+CREATE TABLE `admin_credits_log` (
   `id` bigint(20) NOT NULL COMMENT '变动ID',
   `member_id` bigint(20) DEFAULT '0' COMMENT '管理员ID',
   `app_id` varchar(64) CHARACTER SET utf8mb4 DEFAULT '' COMMENT '应用id',
@@ -122,10 +122,10 @@ CREATE TABLE `hg_admin_credits_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_dept`
+-- 表的结构 `admin_dept`
 --
 
-CREATE TABLE `hg_admin_dept` (
+CREATE TABLE `admin_dept` (
   `id` bigint(20) NOT NULL COMMENT '部门ID',
   `pid` bigint(20) DEFAULT '0' COMMENT '父部门ID',
   `name` varchar(32) DEFAULT NULL COMMENT '部门名称',
@@ -143,10 +143,10 @@ CREATE TABLE `hg_admin_dept` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='后台_部门';
 
 --
--- 转存表中的数据 `hg_admin_dept`
+-- 转存表中的数据 `admin_dept`
 --
 
-INSERT INTO `hg_admin_dept` (`id`, `pid`, `name`, `code`, `type`, `leader`, `phone`, `email`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `admin_dept` (`id`, `pid`, `name`, `code`, `type`, `leader`, `phone`, `email`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (100, 0, 'hotgo', 'hotgo', '', 'hotgo', '15303830571', '133814250@qq.com', 1, NULL, 0, 1, '2022-01-04 09:54:52', '2023-04-27 23:16:57'),
 (101, 100, '深圳总公司', 'shenzhen', 'company', 'hotgo', '15888888888', 'hotgo@qq.com', 2, 'tr_100 ', 1, 1, '2022-01-04 17:54:52', '2023-04-27 23:16:55'),
 (102, 100, '长沙分公司', 'chansgha', '', 'hotgo', '15888888888', 'hotgo@qq.com', 2, 'tr_100 ', 2, 1, '2022-01-04 01:54:52', '2023-04-27 23:17:01'),
@@ -160,10 +160,10 @@ INSERT INTO `hg_admin_dept` (`id`, `pid`, `name`, `code`, `type`, `leader`, `pho
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_member`
+-- 表的结构 `admin_member`
 --
 
-CREATE TABLE `hg_admin_member` (
+CREATE TABLE `admin_member` (
   `id` bigint(20) NOT NULL COMMENT '管理员ID',
   `dept_id` bigint(20) DEFAULT '0' COMMENT '部门ID',
   `role_id` bigint(20) DEFAULT '10' COMMENT '角色ID',
@@ -195,10 +195,10 @@ CREATE TABLE `hg_admin_member` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_用户表';
 
 --
--- 转存表中的数据 `hg_admin_member`
+-- 转存表中的数据 `admin_member`
 --
 
-INSERT INTO `hg_admin_member` (`id`, `dept_id`, `role_id`, `real_name`, `username`, `password_hash`, `salt`, `password_reset_token`, `integral`, `balance`, `avatar`, `sex`, `qq`, `email`, `mobile`, `birthday`, `city_id`, `address`, `pid`, `level`, `tree`, `invite_code`, `cash`, `last_active_at`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `admin_member` (`id`, `dept_id`, `role_id`, `real_name`, `username`, `password_hash`, `salt`, `password_reset_token`, `integral`, `balance`, `avatar`, `sex`, `qq`, `email`, `mobile`, `birthday`, `city_id`, `address`, `pid`, `level`, `tree`, `invite_code`, `cash`, `last_active_at`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, 100, 1, '孟帅', 'admin', 'a7c588fffeb2c1d99b29879d7fe97c78', '6541561', '', '89.00', '99391.78', 'http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdq8er9nfkchdopav.png', 1, '133814250', '133814250@qq.com', '15303830571', '2016-04-16', 410172, '莲花街001号', 0, 1, '', '111', '{\"name\": \"孟帅\", \"account\": \"15303830571\", \"payeeCode\": \"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdq8mqal5isvcb58g.jpg\"}', '2023-05-15 09:59:29', NULL, 1, '2021-02-12 17:59:45', '2023-05-15 09:59:29'),
 (3, 100, 2, '测试账号', 'test', 'a7c588fffeb2c1d99b29879d7fe97c78', '6541561', '', '0.00', '4.00', 'http://alioss.qvnidaye.com//images/2021/03/12/image_1615529198_vMK4kwq2.jpg', 1, '', 'c@qq.cc', '15303888888', '2016-04-13', 371100, '大潮街道666号', 1, 2, 'tr_1 ', '222', NULL, '2023-05-14 12:29:15', '', 1, '2022-02-11 17:59:45', '2023-05-14 12:29:15'),
 (8, 101, 200, 'ameng', 'ameng', '382df3b083a27886edb94e669a857c33', 'hfuUEb', '', '11.00', '3.22', '', 1, '', '', '', NULL, 0, '', 1, 2, 'tr_1 ', '333', NULL, '2023-05-14 12:25:24', '', 1, '2023-02-03 17:34:31', '2023-05-14 12:25:24');
@@ -206,19 +206,19 @@ INSERT INTO `hg_admin_member` (`id`, `dept_id`, `role_id`, `real_name`, `usernam
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_member_post`
+-- 表的结构 `admin_member_post`
 --
 
-CREATE TABLE `hg_admin_member_post` (
+CREATE TABLE `admin_member_post` (
   `member_id` bigint(20) NOT NULL COMMENT '管理员ID',
   `post_id` bigint(20) NOT NULL COMMENT '岗位ID'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_用户岗位关联';
 
 --
--- 转存表中的数据 `hg_admin_member_post`
+-- 转存表中的数据 `admin_member_post`
 --
 
-INSERT INTO `hg_admin_member_post` (`member_id`, `post_id`) VALUES
+INSERT INTO `admin_member_post` (`member_id`, `post_id`) VALUES
 (1, 1),
 (3, 4),
 (8, 2);
@@ -226,29 +226,29 @@ INSERT INTO `hg_admin_member_post` (`member_id`, `post_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_member_role`
+-- 表的结构 `admin_member_role`
 --
 
-CREATE TABLE `hg_admin_member_role` (
+CREATE TABLE `admin_member_role` (
   `member_id` bigint(20) NOT NULL COMMENT '管理员ID',
   `role_id` bigint(20) NOT NULL COMMENT '角色ID'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_用户角色关联';
 
 --
--- 转存表中的数据 `hg_admin_member_role`
+-- 转存表中的数据 `admin_member_role`
 --
 
-INSERT INTO `hg_admin_member_role` (`member_id`, `role_id`) VALUES
+INSERT INTO `admin_member_role` (`member_id`, `role_id`) VALUES
 (1, 1),
 (2, 2);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_menu`
+-- 表的结构 `admin_menu`
 --
 
-CREATE TABLE `hg_admin_menu` (
+CREATE TABLE `admin_menu` (
   `id` bigint(20) NOT NULL COMMENT '菜单ID',
   `pid` bigint(20) DEFAULT '0' COMMENT '父菜单ID',
   `title` varchar(64) NOT NULL COMMENT '菜单名称',
@@ -278,10 +278,10 @@ CREATE TABLE `hg_admin_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_菜单权限';
 
 --
--- 转存表中的数据 `hg_admin_menu`
+-- 转存表中的数据 `admin_menu`
 --
 
-INSERT INTO `hg_admin_menu` (`id`, `pid`, `title`, `name`, `path`, `icon`, `type`, `redirect`, `permissions`, `permission_name`, `component`, `always_show`, `active_menu`, `is_root`, `is_frame`, `frame_src`, `keep_alive`, `hidden`, `affix`, `level`, `tree`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `admin_menu` (`id`, `pid`, `title`, `name`, `path`, `icon`, `type`, `redirect`, `permissions`, `permission_name`, `component`, `always_show`, `active_menu`, `is_root`, `is_frame`, `frame_src`, `keep_alive`, `hidden`, `affix`, `level`, `tree`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (2047, 0, 'Dashboard', 'Dashboard', '/dashboard', 'DashboardOutlined', 1, '/dashboard/console', 'dashboard', '控制台', 'LAYOUT', 0, NULL, 0, 1, NULL, 0, 0, 0, 1, '', 10, '这是一个备注..', 1, '2022-07-17 11:40:03', '2022-07-17 11:40:03'),
 (2048, 2047, '主控台', 'dashboard_console', 'console', '', 2, '', '/console/stat', '主控台', '/dashboard/console/console', 0, '', 0, 1, '', 0, 0, 0, 2, '', 20, '', 1, '2022-07-17 11:45:09', '2022-11-22 11:32:30'),
 (2050, 2047, '工作台', 'dashboard_workplace', 'workplace', NULL, 2, NULL, 'dashboard_workplace', '工作台', '/dashboard/workplace/workplace', 0, NULL, 0, 1, NULL, 0, 0, 0, 2, '', 40, NULL, 1, '2022-07-17 11:45:09', '2022-07-17 11:45:12'),
@@ -411,10 +411,10 @@ INSERT INTO `hg_admin_menu` (`id`, `pid`, `title`, `name`, `path`, `icon`, `type
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_notice`
+-- 表的结构 `admin_notice`
 --
 
-CREATE TABLE `hg_admin_notice` (
+CREATE TABLE `admin_notice` (
   `id` bigint(20) NOT NULL COMMENT '公告ID',
   `title` varchar(64) NOT NULL COMMENT '公告标题',
   `type` bigint(20) NOT NULL COMMENT '公告类型',
@@ -432,10 +432,10 @@ CREATE TABLE `hg_admin_notice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_通知公告';
 
 --
--- 转存表中的数据 `hg_admin_notice`
+-- 转存表中的数据 `admin_notice`
 --
 
-INSERT INTO `hg_admin_notice` (`id`, `title`, `type`, `tag`, `content`, `receiver`, `remark`, `sort`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `admin_notice` (`id`, `title`, `type`, `tag`, `content`, `receiver`, `remark`, `sort`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (29, '2023年春季学期开学工作通知！', 1, 1, '1.学生：2月11日、2月12日报到，2月13日起安排考试。\n\n2.教职工：2月10日（周五）起正式上班（2月11日、2月12日正常上班）。\n\n3.校内进行的各类社会服务项目，主办部门、单位须关注参与人员的健康状况，如有异常第一时间报告。感染后仍在康复期内的师生，不参加剧烈活动。开学后两周内，原则上不组织各类竞技性较强的体育比赛等活动。\n\n4.全校师生员工要牢固树立健康第一的观念，切实增强个人责任感和防护意识，掌握防护技能，坚持戴口罩、勤洗手等良好卫生习惯，加强身体锻炼，保持健康生活方式，提升健康素养和自我防护能力，当好自身健康第一责任人。符合条件的师生，积极有序接种第二剂次加强针疫苗。', 'null', '', 10, 1, 1, 1, '2023-02-09 12:25:39', '2023-02-09 12:48:08', NULL),
 (30, '国务院办公厅关于2023年部分节假日安排的通知', 1, 3, '新华社北京12月8日电  国务院办公厅关于2023年部分节假日安排的通知，全文如下：\n\n　　各省、自治区、直辖市人民政府，国务院\n\n　　各部委、各直属机构：\n\n　　经国务院批准，现将2023年元旦、春节、清明节、劳动节、端午节、中秋节和国庆节放假调休日期的具体安排通知如下。\n\n　　一、元旦：2022年12月31日至2023年1月2日放假调休，共3天。\n\n　　二、春节：1月21日至27日放假调休，共7天。1月28日（星期六）、1月29日（星期日）上班。\n\n　　三、清明节：4月5日放假，共1天。\n\n　　四、劳动节：4月29日至5月3日放假调休，共5天。4月23日（星期日）、5月6日（星期六）上班。\n\n　　五、端午节：6月22日至24日放假调休，共3天。6月25日（星期日）上班。\n\n　　六、中秋节、国庆节：9月29日至10月6日放假调休，共8天。10月7日（星期六）、10月8日（星期日）上班。\n\n　　节假日期间，各地区、各部门要妥善安排好值班和安全、保卫、疫情防控等工作，遇有重大突发事件，要按规定及时报告并妥善处置，确保人民群众祥和平安度过节日假期。', 'null', '', 20, 1, 1, 1, '2023-02-09 12:32:32', '2023-02-09 12:48:28', NULL),
 (31, 'hotgo新版本发布啦！', 2, 4, '<p><img src=\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdr8lj1mpl0eu0jpn.png\"></p><h2><br></h2><h2>本次更新内容如下：</h2><h2>1. 优化角色权限</h2><h2>2. 优化代码生成</h2><h2>3. ....</h2>', 'null', '', 30, 1, 1, 0, '2023-02-09 12:45:17', '2023-02-09 12:45:17', NULL),
@@ -446,10 +446,10 @@ INSERT INTO `hg_admin_notice` (`id`, `title`, `type`, `tag`, `content`, `receive
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_notice_read`
+-- 表的结构 `admin_notice_read`
 --
 
-CREATE TABLE `hg_admin_notice_read` (
+CREATE TABLE `admin_notice_read` (
   `id` bigint(20) NOT NULL COMMENT '记录ID',
   `notice_id` bigint(20) NOT NULL COMMENT '公告ID',
   `member_id` bigint(20) NOT NULL COMMENT '会员ID',
@@ -459,10 +459,10 @@ CREATE TABLE `hg_admin_notice_read` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_公告已读记录';
 
 --
--- 转存表中的数据 `hg_admin_notice_read`
+-- 转存表中的数据 `admin_notice_read`
 --
 
-INSERT INTO `hg_admin_notice_read` (`id`, `notice_id`, `member_id`, `clicks`, `updated_at`, `created_at`) VALUES
+INSERT INTO `admin_notice_read` (`id`, `notice_id`, `member_id`, `clicks`, `updated_at`, `created_at`) VALUES
 (1, 31, 1, 2, '2023-04-26 22:44:51', '2023-04-25 22:59:16'),
 (2, 30, 1, 2, '2023-04-26 22:44:30', '2023-04-25 23:01:27'),
 (3, 32, 3, 0, '2023-04-28 16:48:41', '2023-04-28 16:48:41'),
@@ -472,10 +472,10 @@ INSERT INTO `hg_admin_notice_read` (`id`, `notice_id`, `member_id`, `clicks`, `u
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_oauth`
+-- 表的结构 `admin_oauth`
 --
 
-CREATE TABLE `hg_admin_oauth` (
+CREATE TABLE `admin_oauth` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `member_id` bigint(20) DEFAULT '0' COMMENT '用户ID',
   `unionid` varchar(64) DEFAULT '' COMMENT '唯一ID',
@@ -496,10 +496,10 @@ CREATE TABLE `hg_admin_oauth` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_order`
+-- 表的结构 `admin_order`
 --
 
-CREATE TABLE `hg_admin_order` (
+CREATE TABLE `admin_order` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `member_id` bigint(20) DEFAULT '0' COMMENT '管理员id',
   `order_type` varchar(32) NOT NULL COMMENT '订单类型',
@@ -517,10 +517,10 @@ CREATE TABLE `hg_admin_order` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_post`
+-- 表的结构 `admin_post`
 --
 
-CREATE TABLE `hg_admin_post` (
+CREATE TABLE `admin_post` (
   `id` bigint(20) NOT NULL COMMENT '岗位ID',
   `code` varchar(64) NOT NULL COMMENT '岗位编码',
   `name` varchar(50) NOT NULL COMMENT '岗位名称',
@@ -532,10 +532,10 @@ CREATE TABLE `hg_admin_post` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_岗位';
 
 --
--- 转存表中的数据 `hg_admin_post`
+-- 转存表中的数据 `admin_post`
 --
 
-INSERT INTO `hg_admin_post` (`id`, `code`, `name`, `remark`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `admin_post` (`id`, `code`, `name`, `remark`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'ceo', '董事长', '', 1, 1, '2022-01-04 17:54:52', '2023-01-18 00:00:00'),
 (2, 'se', '项目经理', '', 2, 1, '2022-01-04 17:54:52', '2023-01-18 00:00:00'),
 (3, 'hr', '人力资源', '', 3, 1, '2022-01-04 17:54:52', '2023-02-26 00:32:40'),
@@ -545,10 +545,10 @@ INSERT INTO `hg_admin_post` (`id`, `code`, `name`, `remark`, `sort`, `status`, `
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_role`
+-- 表的结构 `admin_role`
 --
 
-CREATE TABLE `hg_admin_role` (
+CREATE TABLE `admin_role` (
   `id` bigint(20) NOT NULL COMMENT '角色ID',
   `name` varchar(32) NOT NULL COMMENT '角色名称',
   `key` varchar(128) NOT NULL COMMENT '角色权限字符串',
@@ -565,10 +565,10 @@ CREATE TABLE `hg_admin_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_角色信息';
 
 --
--- 转存表中的数据 `hg_admin_role`
+-- 转存表中的数据 `admin_role`
 --
 
-INSERT INTO `hg_admin_role` (`id`, `name`, `key`, `data_scope`, `custom_dept`, `pid`, `level`, `tree`, `remark`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `admin_role` (`id`, `name`, `key`, `data_scope`, `custom_dept`, `pid`, `level`, `tree`, `remark`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (1, '超级管理员', 'super', 1, '[]', 0, 1, NULL, '超级管理员，拥有全部菜单、数据权限，无需绑定和验证', 1, 1, '2022-01-04 17:54:52', '2023-01-12 00:00:00'),
 (2, '管理员', 'manage', 1, '[]', 1, 2, 'tr_1 ', '普通管理员，拥有常规的后台系统权限', 2, 1, '2022-01-04 17:54:52', '2023-04-27 00:00:00'),
 (200, '金牌代理商', 'gold_agent', 7, '[]', 0, 1, NULL, '金牌代理商，分离机构权限，满足sass需求', 200, 1, '2023-01-12 00:00:00', '2022-08-13 23:28:52'),
@@ -581,10 +581,10 @@ INSERT INTO `hg_admin_role` (`id`, `name`, `key`, `data_scope`, `custom_dept`, `
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_role_casbin`
+-- 表的结构 `admin_role_casbin`
 --
 
-CREATE TABLE `hg_admin_role_casbin` (
+CREATE TABLE `admin_role_casbin` (
   `id` bigint(20) NOT NULL,
   `p_type` varchar(64) DEFAULT NULL,
   `v0` varchar(256) DEFAULT NULL,
@@ -596,10 +596,10 @@ CREATE TABLE `hg_admin_role_casbin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_casbin权限表' ROW_FORMAT=DYNAMIC;
 
 --
--- 转存表中的数据 `hg_admin_role_casbin`
+-- 转存表中的数据 `admin_role_casbin`
 --
 
-INSERT INTO `hg_admin_role_casbin` (`id`, `p_type`, `v0`, `v1`, `v2`, `v3`, `v4`, `v5`) VALUES
+INSERT INTO `admin_role_casbin` (`id`, `p_type`, `v0`, `v1`, `v2`, `v3`, `v4`, `v5`) VALUES
 (28037, 'p', 'manage', 'dashboard', 'GET|POST|PUT|DELETE|PATCH|OPTIONS|HEAD', '', '', ''),
 (28038, 'p', 'manage', '/console/stat', 'GET|POST|PUT|DELETE|PATCH|OPTIONS|HEAD', '', '', ''),
 (28039, 'p', 'manage', 'dashboard_workplace', 'GET|POST|PUT|DELETE|PATCH|OPTIONS|HEAD', '', '', ''),
@@ -799,19 +799,19 @@ INSERT INTO `hg_admin_role_casbin` (`id`, `p_type`, `v0`, `v1`, `v2`, `v3`, `v4`
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_admin_role_menu`
+-- 表的结构 `admin_role_menu`
 --
 
-CREATE TABLE `hg_admin_role_menu` (
+CREATE TABLE `admin_role_menu` (
   `role_id` bigint(20) NOT NULL COMMENT '角色ID',
   `menu_id` bigint(20) NOT NULL COMMENT '菜单ID'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员_角色菜单关联';
 
 --
--- 转存表中的数据 `hg_admin_role_menu`
+-- 转存表中的数据 `admin_role_menu`
 --
 
-INSERT INTO `hg_admin_role_menu` (`role_id`, `menu_id`) VALUES
+INSERT INTO `admin_role_menu` (`role_id`, `menu_id`) VALUES
 (1, 2051),
 (1, 2052),
 (1, 2053),
@@ -1079,10 +1079,10 @@ INSERT INTO `hg_admin_role_menu` (`role_id`, `menu_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_pay_log`
+-- 表的结构 `pay_log`
 --
 
-CREATE TABLE `hg_pay_log` (
+CREATE TABLE `pay_log` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `member_id` bigint(20) DEFAULT '0' COMMENT '会员ID',
   `app_id` varchar(50) DEFAULT NULL COMMENT '应用ID',
@@ -1118,10 +1118,10 @@ CREATE TABLE `hg_pay_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_pay_refund`
+-- 表的结构 `pay_refund`
 --
 
-CREATE TABLE `hg_pay_refund` (
+CREATE TABLE `pay_refund` (
   `id` bigint(20) UNSIGNED NOT NULL COMMENT '主键ID',
   `member_id` bigint(20) DEFAULT '0' COMMENT '会员ID',
   `app_id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '应用ID',
@@ -1140,10 +1140,10 @@ CREATE TABLE `hg_pay_refund` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_addons_config`
+-- 表的结构 `sys_addons_config`
 --
 
-CREATE TABLE `hg_sys_addons_config` (
+CREATE TABLE `sys_addons_config` (
   `id` bigint(20) NOT NULL COMMENT '配置ID',
   `addon_name` varchar(128) NOT NULL COMMENT '插件名称',
   `group` varchar(128) NOT NULL COMMENT '分组',
@@ -1161,19 +1161,19 @@ CREATE TABLE `hg_sys_addons_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_插件配置';
 
 --
--- 转存表中的数据 `hg_sys_addons_config`
+-- 转存表中的数据 `sys_addons_config`
 --
 
-INSERT INTO `hg_sys_addons_config` (`id`, `addon_name`, `group`, `name`, `type`, `key`, `value`, `default_value`, `sort`, `tip`, `is_default`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_addons_config` (`id`, `addon_name`, `group`, `name`, `type`, `key`, `value`, `default_value`, `sort`, `tip`, `is_default`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'hgexample', 'basic', '测试参数', 'string', 'basicTest', 'HotGo', 'HotGo', 10, '测试参数，可以按需添加配置自定义参数', 0, 1, '2023-02-14 10:56:01', '2023-04-28 16:46:11');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_addons_install`
+-- 表的结构 `sys_addons_install`
 --
 
-CREATE TABLE `hg_sys_addons_install` (
+CREATE TABLE `sys_addons_install` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `name` varchar(255) NOT NULL COMMENT '插件名称',
   `version` varchar(128) NOT NULL DEFAULT '' COMMENT '版本号',
@@ -1183,19 +1183,19 @@ CREATE TABLE `hg_sys_addons_install` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_插件安装记录';
 
 --
--- 转存表中的数据 `hg_sys_addons_install`
+-- 转存表中的数据 `sys_addons_install`
 --
 
-INSERT INTO `hg_sys_addons_install` (`id`, `name`, `version`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_addons_install` (`id`, `name`, `version`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'hgexample', 'v1.0.0', 1, '2023-02-02 00:00:00', '2023-04-28 16:46:02');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_attachment`
+-- 表的结构 `sys_attachment`
 --
 
-CREATE TABLE `hg_sys_attachment` (
+CREATE TABLE `sys_attachment` (
   `id` bigint(20) NOT NULL COMMENT '文件ID',
   `app_id` varchar(255) NOT NULL COMMENT '应用ID',
   `member_id` bigint(20) DEFAULT '0' COMMENT '管理员ID',
@@ -1216,19 +1216,19 @@ CREATE TABLE `hg_sys_attachment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_附件管理';
 
 --
--- 转存表中的数据 `hg_sys_attachment`
+-- 转存表中的数据 `sys_attachment`
 --
 
-INSERT INTO `hg_sys_attachment` (`id`, `app_id`, `member_id`, `cate_id`, `drive`, `name`, `kind`, `meta_type`, `naive_type`, `path`, `file_url`, `size`, `ext`, `md5`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_attachment` (`id`, `app_id`, `member_id`, `cate_id`, `drive`, `name`, `kind`, `meta_type`, `naive_type`, `path`, `file_url`, `size`, `ext`, `md5`, `status`, `created_at`, `updated_at`) VALUES
 (55, 'admin', 1, 0, 'local', 'logo.png', 'images', 'image/png', '', 'attachment/2023-05-14/csltf747yrr4gd4kc5.png', 'attachment/2023-05-14/csltf747yrr4gd4kc5.png', 38601, 'png', '492c0e0f0eb8e7e6c7b6901d32854d19', 1, '2023-05-14 15:17:25', '2023-05-14 15:17:25');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_blacklist`
+-- 表的结构 `sys_blacklist`
 --
 
-CREATE TABLE `hg_sys_blacklist` (
+CREATE TABLE `sys_blacklist` (
   `id` bigint(20) NOT NULL COMMENT '黑名单ID',
   `ip` varchar(100) DEFAULT '' COMMENT 'IP地址',
   `remark` varchar(500) DEFAULT NULL COMMENT '备注',
@@ -1238,10 +1238,10 @@ CREATE TABLE `hg_sys_blacklist` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_访问黑名单';
 
 --
--- 转存表中的数据 `hg_sys_blacklist`
+-- 转存表中的数据 `sys_blacklist`
 --
 
-INSERT INTO `hg_sys_blacklist` (`id`, `ip`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_blacklist` (`id`, `ip`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, '39.162.138.4', '', 2, '2022-10-01 22:02:09', '2022-10-01 22:39:23'),
 (2, '29.162.138.91', '', 2, '2022-10-01 22:02:09', '2022-10-01 22:39:23'),
 (3, '19.162.138.94', '指定IP', 1, '2022-10-01 14:02:09', '2023-01-20 23:11:43'),
@@ -1252,10 +1252,10 @@ INSERT INTO `hg_sys_blacklist` (`id`, `ip`, `remark`, `status`, `created_at`, `u
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_config`
+-- 表的结构 `sys_config`
 --
 
-CREATE TABLE `hg_sys_config` (
+CREATE TABLE `sys_config` (
   `id` bigint(20) NOT NULL COMMENT '配置ID',
   `group` varchar(128) NOT NULL COMMENT '配置分组',
   `name` varchar(100) DEFAULT '' COMMENT '参数名称',
@@ -1272,10 +1272,10 @@ CREATE TABLE `hg_sys_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_配置';
 
 --
--- 转存表中的数据 `hg_sys_config`
+-- 转存表中的数据 `sys_config`
 --
 
-INSERT INTO `hg_sys_config` (`id`, `group`, `name`, `type`, `key`, `value`, `default_value`, `sort`, `tip`, `is_default`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_config` (`id`, `group`, `name`, `type`, `key`, `value`, `default_value`, `sort`, `tip`, `is_default`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'theme', '默认主题', 'string', 'themeDarkTheme', 'dark', 'dark', 50, '', 1, 1, '2021-01-30 13:27:43', '2022-09-05 20:29:05'),
 (2, 'theme', '默认系统主题', 'string', 'themeAppTheme', '#2d8cf0', '#2d8cf0', 60, '', 1, 1, '2021-01-30 13:27:43', '2022-09-05 20:29:05'),
 (3, 'theme', '默认侧边栏风格', 'string', 'themeNavTheme', 'light', 'dark', 70, '', 1, 1, '2021-01-30 13:27:43', '2022-09-05 20:29:05'),
@@ -1382,10 +1382,10 @@ INSERT INTO `hg_sys_config` (`id`, `group`, `name`, `type`, `key`, `value`, `def
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_cron`
+-- 表的结构 `sys_cron`
 --
 
-CREATE TABLE `hg_sys_cron` (
+CREATE TABLE `sys_cron` (
   `id` bigint(20) NOT NULL COMMENT '任务ID',
   `group_id` bigint(20) NOT NULL COMMENT '分组ID',
   `name` varchar(100) DEFAULT '' COMMENT '任务名称',
@@ -1401,10 +1401,10 @@ CREATE TABLE `hg_sys_cron` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_定时任务';
 
 --
--- 转存表中的数据 `hg_sys_cron`
+-- 转存表中的数据 `sys_cron`
 --
 
-INSERT INTO `hg_sys_cron` (`id`, `group_id`, `name`, `params`, `pattern`, `policy`, `count`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_cron` (`id`, `group_id`, `name`, `params`, `pattern`, `policy`, `count`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, 1, 'test', '', '* * * * * *', 1, 3, 10, '测试无参数任务', 2, '2022-10-01 22:02:09', '2023-04-27 23:27:39'),
 (2, 1, 'test2', 'hotGo,3,欢迎使用hotGo！', '* * * * * *', 1, 0, 10, '测试有参数任务', 2, '2022-10-01 06:02:09', '2023-02-04 17:39:53'),
 (3, 1, 'close_order', '', '0 */10 * * * *', 1, 1, 100, '取消过期订单，10分钟运行一次', 2, '2023-04-22 21:58:47', '2023-04-22 22:00:23');
@@ -1412,10 +1412,10 @@ INSERT INTO `hg_sys_cron` (`id`, `group_id`, `name`, `params`, `pattern`, `polic
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_cron_group`
+-- 表的结构 `sys_cron_group`
 --
 
-CREATE TABLE `hg_sys_cron_group` (
+CREATE TABLE `sys_cron_group` (
   `id` bigint(20) NOT NULL COMMENT '任务分组ID',
   `pid` bigint(20) NOT NULL COMMENT '父类任务分组ID',
   `name` varchar(100) DEFAULT '' COMMENT '分组名称',
@@ -1428,20 +1428,20 @@ CREATE TABLE `hg_sys_cron_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_定时任务分组';
 
 --
--- 转存表中的数据 `hg_sys_cron_group`
+-- 转存表中的数据 `sys_cron_group`
 --
 
-INSERT INTO `hg_sys_cron_group` (`id`, `pid`, `name`, `is_default`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_cron_group` (`id`, `pid`, `name`, `is_default`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, 0, '系统默认', 1, 0, '这是系统默认的任务分组，无法删除！', 1, '2021-02-25 17:38:07', '2021-02-25 19:32:57'),
 (2, 0, '测试', 0, 0, '这是测试任务分组', 1, '2021-02-25 17:38:07', '2021-02-25 19:32:57');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_dict_data`
+-- 表的结构 `sys_dict_data`
 --
 
-CREATE TABLE `hg_sys_dict_data` (
+CREATE TABLE `sys_dict_data` (
   `id` bigint(20) NOT NULL COMMENT '字典数据ID',
   `label` varchar(100) DEFAULT NULL COMMENT '字典标签',
   `value` varchar(100) DEFAULT NULL COMMENT '字典键值',
@@ -1457,10 +1457,10 @@ CREATE TABLE `hg_sys_dict_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_字典数据';
 
 --
--- 转存表中的数据 `hg_sys_dict_data`
+-- 转存表中的数据 `sys_dict_data`
 --
 
-INSERT INTO `hg_sys_dict_data` (`id`, `label`, `value`, `value_type`, `type`, `list_class`, `is_default`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_dict_data` (`id`, `label`, `value`, `value_type`, `type`, `list_class`, `is_default`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, '男', '1', 'int', 'sys_user_sex', 'success', 1, 10, '性别男', 1, '2021-01-30 13:27:43', '2023-04-27 23:24:58'),
 (2, '女', '2', 'int', 'sys_user_sex', 'warning', 1, 20, '性别女', 1, '2021-01-30 13:27:43', '2023-01-06 09:45:21'),
 (3, '保密', '3', 'int', 'sys_user_sex', 'error', 1, 30, '性别保密', 1, '2021-01-30 13:27:43', '2023-01-06 09:45:18'),
@@ -1544,10 +1544,10 @@ INSERT INTO `hg_sys_dict_data` (`id`, `label`, `value`, `value_type`, `type`, `l
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_dict_type`
+-- 表的结构 `sys_dict_type`
 --
 
-CREATE TABLE `hg_sys_dict_type` (
+CREATE TABLE `sys_dict_type` (
   `id` bigint(20) NOT NULL COMMENT '字典类型ID',
   `pid` bigint(20) NOT NULL COMMENT '父类字典类型ID',
   `name` varchar(100) DEFAULT '' COMMENT '字典类型名称',
@@ -1560,10 +1560,10 @@ CREATE TABLE `hg_sys_dict_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_字典类型';
 
 --
--- 转存表中的数据 `hg_sys_dict_type`
+-- 转存表中的数据 `sys_dict_type`
 --
 
-INSERT INTO `hg_sys_dict_type` (`id`, `pid`, `name`, `type`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_dict_type` (`id`, `pid`, `name`, `type`, `sort`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, 27, '用户性别', 'sys_user_sex', 0, '用户性别列表', 1, '2021-01-30 13:27:43', '2021-03-24 11:38:47'),
 (2, 28, '菜单状态', 'sys_show_hide', 0, '', 1, '2021-01-30 13:27:43', '2023-02-26 00:46:18'),
 (3, 28, '系统状态', 'sys_normal_disable', 0, '系统状态列表', 1, '2021-01-30 13:27:43', NULL),
@@ -1592,10 +1592,10 @@ INSERT INTO `hg_sys_dict_type` (`id`, `pid`, `name`, `type`, `sort`, `remark`, `
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_ems_log`
+-- 表的结构 `sys_ems_log`
 --
 
-CREATE TABLE `hg_sys_ems_log` (
+CREATE TABLE `sys_ems_log` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `event` varchar(64) NOT NULL COMMENT '事件',
   `email` varchar(512) NOT NULL COMMENT '邮箱地址，多个用;隔开',
@@ -1609,19 +1609,19 @@ CREATE TABLE `hg_sys_ems_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_邮件发送记录';
 
 --
--- 转存表中的数据 `hg_sys_ems_log`
+-- 转存表中的数据 `sys_ems_log`
 --
 
-INSERT INTO `hg_sys_ems_log` (`id`, `event`, `email`, `code`, `times`, `content`, `ip`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_ems_log` (`id`, `event`, `email`, `code`, `times`, `content`, `ip`, `status`, `created_at`, `updated_at`) VALUES
 (4, 'bind', '133814250@qq.com', '8793', 1, '<!doctype html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n    <title>验证码邮件</title>\r\n    <style>\r\n        html,\r\n        body {\r\n            margin: 0 auto !important;\r\n            padding: 0 !important;\r\n            width: 100% !important;\r\n            font-family: sans-serif;\r\n            line-height: 1.4;\r\n            -webkit-font-smoothing: antialiased;\r\n            -ms-text-size-adjust: 100%;\r\n            -webkit-text-size-adjust: 100%;\r\n        }\r\n        * {\r\n            -ms-text-size-adjust: 100%;\r\n        }\r\n        table,\r\n        td {\r\n            mso-table-lspace: 0 !important;\r\n            mso-table-rspace: 0 !important;\r\n        }\r\n        img {\r\n            display: block;\r\n            border: none;\r\n            max-width: 100%;\r\n            -ms-interpolation-mode: bicubic;\r\n        }\r\n        a {\r\n            text-decoration: none;\r\n        }\r\n    </style>\r\n</head>\r\n<body\r\n        leftmargin=\"0\"\r\n        marginwidth=\"0\"\r\n        topmargin=\"0\"\r\n        marginheight=\"0\"\r\n        offset=\"0\"\r\n        width=\"100%\"\r\n        style=\"margin: 0; padding: 0 !important; mso-line-height-rule: exactly\"\r\n>\r\n<table\r\n        role=\"presentation\"\r\n        align=\"center\"\r\n        valign=\"top\"\r\n        border=\"0\"\r\n        cellpadding=\"0\"\r\n        cellspacing=\"0\"\r\n        height=\"100%\"\r\n        width=\"100%\"\r\n        style=\"border-spacing: 0;\r\n				border-collapse: collapse;\r\n				vertical-align: top;\r\n				padding: 0;\r\n				margin: 0;\r\n				width: 100%;\r\n				text-align: center;\"\r\n>\r\n    <tr>\r\n        <td align=\"center\" valign=\"top\">\r\n            <table\r\n                    role=\"presentation\"\r\n                    align=\"center\"\r\n                    border=\"0\"\r\n                    cellpadding=\"0\"\r\n                    cellspacing=\"0\"\r\n                    width=\"600\"\r\n                    bgcolor=\"#ffffff\"\r\n                    style=\"max-width: 600px;\r\n							border-spacing: 0;\r\n							border-collapse: collapse;\r\n							vertical-align: top;\r\n							padding: 0;\r\n							margin: 0;\r\n							width: 100%;\r\n							background: #ffffff;\"\r\n            >\r\n                <tr>\r\n                    <td height=40\" style=\"height:40px\"></td>\r\n                </tr>\r\n                <tr>\r\n                    <td align=\"center\" valign=\"top\">\r\n                        <table\r\n                                role=\"presentation\"\r\n                                align=\"center\"\r\n                                border=\"0\"\r\n                                cellpadding=\"0\"\r\n                                cellspacing=\"0\"\r\n                                width=\"440\"\r\n                                style=\"max-width: 440px;\r\n										border-spacing: 0;\r\n										border-collapse: collapse;\r\n										vertical-align: top;\r\n										padding: 0;\r\n										margin: 0;\r\n										width: 100%;\r\n										text-align: center;\"\r\n                        >\r\n                            <tr>\r\n                                <td align=\"center\">\r\n                                    <img\r\n                                            src=\"https://hotgo.facms.cn/attachment/2022-10-07/cnf9tml2ikirr1i6ss.png\"\r\n                                            width=\"170\"\r\n                                            style=\"border: none; display: block; max-width: 170px; width: 100%\"\r\n                                     alt=\"logo\">\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td height=\"40\" style=\"height:40px\"></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <h1\r\n                                            style=\"font-family: Arial, Helvetica, sans-serif;\r\n													font-size: 24px;\r\n													color: #010E28;\r\n													font-weight: bold;\r\n													margin: 0 0 5px;\r\n													padding: 0\"\r\n                                    >\r\n                                        这是你发送的验证码吗？\r\n                                    </h1>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td height=\"15\" style=\"height: 15px\"></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <p\r\n                                            style=\"font-family: Arial, Helvetica, sans-serif;\r\n													font-size: 15px;\r\n													color: #5B6987;\r\n													margin: 0;\r\n													padding: 0;\r\n													line-height: 20px;\"\r\n                                    >\r\n                                        Windows 10 <br />\r\n                                        保留地址 (estimated) <br />\r\n                                        IP 地址: 127**.0.1\r\n                                    </p>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td height=\"30\" style=\"height: 30px\"></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <p\r\n                                            style=\"font-family: Arial, Helvetica, sans-serif;\r\n													font-size: 15px;\r\n													color: #5B6987;\r\n													margin: 0;\r\n													padding: 0;\r\n													line-height: 20px;\r\n													font-weight: bold;\"\r\n                                    >\r\n                                        如果是，请输入验证码:\r\n                                    </p>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td height=\"20\" style=\"height: 20px\"></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <p\r\n                                            style=\"font-family: Arial, Helvetica, sans-serif;\r\n													font-size: 35px;\r\n													color: #010E28;\r\n													margin: 0;\r\n													padding: 0;\r\n													line-height: 20px;\r\n													font-weight: bold;\"\r\n                                    >\r\n                                        8793\r\n                                    </p>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td height=\"20\" style=\"height: 20px\">	</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <p\r\n                                            style=\"font-family: Arial, Helvetica, sans-serif;\r\n													font-size: 15px;\r\n													color: #5B6987;\r\n													margin: 0;\r\n													padding: 0;\r\n													line-height: 20px;\r\n													font-weight: bold;\"\r\n                                    >\r\n                                        该验证码10分钟内有效，请不要告诉于他人！\r\n                                    </p>\r\n                                </td>\r\n                            </tr>\r\n                        </table>\r\n\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td height=\"40\" style=\"height:40px\"></td>\r\n                </tr>\r\n            </table>\r\n        </td>\r\n    </tr>\r\n</table>\r\n</body>\r\n</html>', '39.165.245.100', 2, '2023-02-04 16:49:39', '2023-02-04 16:56:24');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_gen_codes`
+-- 表的结构 `sys_gen_codes`
 --
 
-CREATE TABLE `hg_sys_gen_codes` (
+CREATE TABLE `sys_gen_codes` (
   `id` bigint(20) NOT NULL COMMENT '生成ID',
   `gen_type` int(10) UNSIGNED NOT NULL COMMENT '生成类型',
   `gen_template` int(11) DEFAULT '0' COMMENT '生成模板',
@@ -1639,19 +1639,19 @@ CREATE TABLE `hg_sys_gen_codes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_代码生成记录';
 
 --
--- 转存表中的数据 `hg_sys_gen_codes`
+-- 转存表中的数据 `sys_gen_codes`
 --
 
-INSERT INTO `hg_sys_gen_codes` (`id`, `gen_type`, `gen_template`, `var_name`, `options`, `db_name`, `table_name`, `table_comment`, `dao_name`, `master_columns`, `addon_name`, `status`, `created_at`, `updated_at`) VALUES
-(1, 10, 0, 'CurdDemo', '{\"join\": [{\"uuid\": \"pgJsFoqfaGjqgKjy\", \"alias\": \"testCategory\", \"field\": \"id\", \"columns\": [{\"dc\": \"分类ID\", \"id\": 1, \"name\": \"id\", \"extra\": \"auto_increment\", \"index\": \"PRI\", \"goName\": \"TestCategoryId\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryId\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"分类名称\", \"id\": 2, \"name\": \"name\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryName\", \"goType\": \"string\", \"isEdit\": false, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"testCategoryName\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": true, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"描述\", \"id\": 3, \"name\": \"description\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryDescription\", \"goType\": \"string\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 255, \"tsName\": \"testCategoryDescription\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"排序\", \"id\": 4, \"name\": \"sort\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategorySort\", \"goType\": \"int\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategorySort\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"int(11)\", \"dataType\": \"int\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"备注\", \"id\": 5, \"name\": \"remark\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryRemark\", \"goType\": \"string\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 255, \"tsName\": \"testCategoryRemark\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"状态\", \"id\": 6, \"name\": \"status\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryStatus\", \"goType\": \"int\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryStatus\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"tinyint(1)\", \"dataType\": \"tinyint\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 1}, {\"dc\": \"创建时间\", \"id\": 7, \"name\": \"created_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryCreatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryCreatedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"修改时间\", \"id\": 8, \"name\": \"updated_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryUpdatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryUpdatedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"删除时间\", \"id\": 9, \"name\": \"deleted_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryDeletedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryDeletedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}], \"daoName\": \"TestCategory\", \"linkMode\": 1, \"linkTable\": \"hg_test_category\", \"masterField\": \"category_id\"}], \"menu\": {\"pid\": 2097, \"icon\": \"MenuOutlined\", \"sort\": 200}, \"autoOps\": [\"genMenuPermissions\", \"runDao\", \"runService\", \"forcedCover\"], \"headOps\": [\"add\", \"batchDel\", \"export\"], \"columnOps\": [\"edit\", \"del\", \"view\", \"status\", \"switch\", \"check\"]}', 'default', 'hg_sys_gen_curd_demo', '生成演示', 'SysGenCurdDemo', '[{\"dc\": \"ID\", \"id\": 1, \"name\": \"id\", \"extra\": \"auto_increment\", \"index\": \"PRI\", \"goName\": \"Id\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": true, \"isSort\": true, \"length\": 0, \"tsName\": \"id\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"分类ID\", \"id\": 2, \"name\": \"category_id\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CategoryId\", \"goType\": \"int64\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"categoryId\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"标题\", \"id\": 3, \"name\": \"title\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Title\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 64, \"tsName\": \"title\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(64)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"Input\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"描述\", \"id\": 4, \"name\": \"description\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Description\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"description\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"InputTextarea\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"内容\", \"id\": 5, \"name\": \"content\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Content\", \"goType\": \"string\", \"isEdit\": true, \"isList\": false, \"isSort\": false, \"length\": 65535, \"tsName\": \"content\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"text\", \"dataType\": \"text\", \"dictType\": 0, \"formMode\": \"InputEditor\", \"formRole\": \"none\", \"isExport\": false, \"required\": false, \"queryWhere\": \"LIKE %...%\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"单图\", \"id\": 6, \"name\": \"image\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Image\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"image\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"UploadImage\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"附件\", \"id\": 7, \"name\": \"attachfile\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Attachfile\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"attachfile\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"UploadFile\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"所在城市\", \"id\": 8, \"name\": \"city_id\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CityId\", \"goType\": \"int64\", \"isEdit\": true, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"cityId\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"CitySelector\", \"formRole\": \"none\", \"isExport\": false, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 0}, {\"dc\": \"显示开关\", \"id\": 9, \"name\": \"switch\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Switch\", \"goType\": \"int\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"switch\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"int(11)\", \"dataType\": \"int\", \"dictType\": 0, \"formMode\": \"Switch\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 1}, {\"dc\": \"排序\", \"id\": 10, \"name\": \"sort\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Sort\", \"goType\": \"int\", \"isEdit\": true, \"isList\": true, \"isSort\": true, \"length\": 0, \"tsName\": \"sort\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"int(11)\", \"dataType\": \"int\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"状态\", \"id\": 11, \"name\": \"status\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Status\", \"goType\": \"int\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"status\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"tinyint(1)\", \"dataType\": \"tinyint\", \"dictType\": 3, \"formMode\": \"Select\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 1}, {\"dc\": \"创建者\", \"id\": 12, \"name\": \"created_by\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CreatedBy\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"createdBy\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 0}, {\"dc\": \"更新者\", \"id\": 13, \"name\": \"updated_by\", \"extra\": \"\", \"index\": \"\", \"goName\": \"UpdatedBy\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"updatedBy\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 0}, {\"dc\": \"创建时间\", \"id\": 14, \"name\": \"created_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CreatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"createdAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"TimeRange\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"BETWEEN\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"修改时间\", \"id\": 15, \"name\": \"updated_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"UpdatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"updatedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"Time\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"删除时间\", \"id\": 16, \"name\": \"deleted_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"DeletedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"deletedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"Time\", \"formRole\": \"none\", \"isExport\": false, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}]', '', 1, '2023-01-18 11:51:22', '2023-04-28 15:28:40');
+INSERT INTO `sys_gen_codes` (`id`, `gen_type`, `gen_template`, `var_name`, `options`, `db_name`, `table_name`, `table_comment`, `dao_name`, `master_columns`, `addon_name`, `status`, `created_at`, `updated_at`) VALUES
+(1, 10, 0, 'CurdDemo', '{\"join\": [{\"uuid\": \"pgJsFoqfaGjqgKjy\", \"alias\": \"testCategory\", \"field\": \"id\", \"columns\": [{\"dc\": \"分类ID\", \"id\": 1, \"name\": \"id\", \"extra\": \"auto_increment\", \"index\": \"PRI\", \"goName\": \"TestCategoryId\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryId\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"分类名称\", \"id\": 2, \"name\": \"name\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryName\", \"goType\": \"string\", \"isEdit\": false, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"testCategoryName\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": true, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"描述\", \"id\": 3, \"name\": \"description\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryDescription\", \"goType\": \"string\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 255, \"tsName\": \"testCategoryDescription\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"排序\", \"id\": 4, \"name\": \"sort\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategorySort\", \"goType\": \"int\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategorySort\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"int(11)\", \"dataType\": \"int\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"备注\", \"id\": 5, \"name\": \"remark\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryRemark\", \"goType\": \"string\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 255, \"tsName\": \"testCategoryRemark\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"状态\", \"id\": 6, \"name\": \"status\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryStatus\", \"goType\": \"int\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryStatus\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"tinyint(1)\", \"dataType\": \"tinyint\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 1}, {\"dc\": \"创建时间\", \"id\": 7, \"name\": \"created_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryCreatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryCreatedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"修改时间\", \"id\": 8, \"name\": \"updated_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryUpdatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryUpdatedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"删除时间\", \"id\": 9, \"name\": \"deleted_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"TestCategoryDeletedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"testCategoryDeletedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"\", \"formRole\": \"\", \"isExport\": false, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}], \"daoName\": \"TestCategory\", \"linkMode\": 1, \"linkTable\": \"test_category\", \"masterField\": \"category_id\"}], \"menu\": {\"pid\": 2097, \"icon\": \"MenuOutlined\", \"sort\": 200}, \"autoOps\": [\"genMenuPermissions\", \"runDao\", \"runService\", \"forcedCover\"], \"headOps\": [\"add\", \"batchDel\", \"export\"], \"columnOps\": [\"edit\", \"del\", \"view\", \"status\", \"switch\", \"check\"]}', 'default', 'sys_gen_curd_demo', '生成演示', 'SysGenCurdDemo', '[{\"dc\": \"ID\", \"id\": 1, \"name\": \"id\", \"extra\": \"auto_increment\", \"index\": \"PRI\", \"goName\": \"Id\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": true, \"isSort\": true, \"length\": 0, \"tsName\": \"id\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"分类ID\", \"id\": 2, \"name\": \"category_id\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CategoryId\", \"goType\": \"int64\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"categoryId\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"标题\", \"id\": 3, \"name\": \"title\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Title\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 64, \"tsName\": \"title\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(64)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"Input\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"描述\", \"id\": 4, \"name\": \"description\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Description\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"description\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"InputTextarea\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"内容\", \"id\": 5, \"name\": \"content\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Content\", \"goType\": \"string\", \"isEdit\": true, \"isList\": false, \"isSort\": false, \"length\": 65535, \"tsName\": \"content\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"text\", \"dataType\": \"text\", \"dictType\": 0, \"formMode\": \"InputEditor\", \"formRole\": \"none\", \"isExport\": false, \"required\": false, \"queryWhere\": \"LIKE %...%\", \"isAllowNull\": \"NO\", \"defaultValue\": \"\"}, {\"dc\": \"单图\", \"id\": 6, \"name\": \"image\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Image\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"image\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"UploadImage\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"附件\", \"id\": 7, \"name\": \"attachfile\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Attachfile\", \"goType\": \"string\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 255, \"tsName\": \"attachfile\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"varchar(255)\", \"dataType\": \"varchar\", \"dictType\": 0, \"formMode\": \"UploadFile\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"LIKE\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"所在城市\", \"id\": 8, \"name\": \"city_id\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CityId\", \"goType\": \"int64\", \"isEdit\": true, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"cityId\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"CitySelector\", \"formRole\": \"none\", \"isExport\": false, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 0}, {\"dc\": \"显示开关\", \"id\": 9, \"name\": \"switch\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Switch\", \"goType\": \"int\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"switch\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"int(11)\", \"dataType\": \"int\", \"dictType\": 0, \"formMode\": \"Switch\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 1}, {\"dc\": \"排序\", \"id\": 10, \"name\": \"sort\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Sort\", \"goType\": \"int\", \"isEdit\": true, \"isList\": true, \"isSort\": true, \"length\": 0, \"tsName\": \"sort\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"int(11)\", \"dataType\": \"int\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": false, \"queryWhere\": \"=\", \"isAllowNull\": \"NO\", \"defaultValue\": 0}, {\"dc\": \"状态\", \"id\": 11, \"name\": \"status\", \"extra\": \"\", \"index\": \"\", \"goName\": \"Status\", \"goType\": \"int\", \"isEdit\": true, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"status\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"tinyint(1)\", \"dataType\": \"tinyint\", \"dictType\": 3, \"formMode\": \"Select\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 1}, {\"dc\": \"创建者\", \"id\": 12, \"name\": \"created_by\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CreatedBy\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"createdBy\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 0}, {\"dc\": \"更新者\", \"id\": 13, \"name\": \"updated_by\", \"extra\": \"\", \"index\": \"\", \"goName\": \"UpdatedBy\", \"goType\": \"int64\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"updatedBy\", \"tsType\": \"number\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"bigint(20)\", \"dataType\": \"bigint\", \"dictType\": 0, \"formMode\": \"InputNumber\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": 0}, {\"dc\": \"创建时间\", \"id\": 14, \"name\": \"created_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"CreatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"createdAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": true, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"TimeRange\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"BETWEEN\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"修改时间\", \"id\": 15, \"name\": \"updated_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"UpdatedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": true, \"isSort\": false, \"length\": 0, \"tsName\": \"updatedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"Time\", \"formRole\": \"none\", \"isExport\": true, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}, {\"dc\": \"删除时间\", \"id\": 16, \"name\": \"deleted_at\", \"extra\": \"\", \"index\": \"\", \"goName\": \"DeletedAt\", \"goType\": \"*gtime.Time\", \"isEdit\": false, \"isList\": false, \"isSort\": false, \"length\": 0, \"tsName\": \"deletedAt\", \"tsType\": \"string\", \"unique\": false, \"isQuery\": false, \"sqlType\": \"datetime\", \"dataType\": \"datetime\", \"dictType\": 0, \"formMode\": \"Time\", \"formRole\": \"none\", \"isExport\": false, \"required\": true, \"queryWhere\": \"=\", \"isAllowNull\": \"YES\", \"defaultValue\": \"\"}]', '', 1, '2023-01-18 11:51:22', '2023-04-28 15:28:40');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_gen_curd_demo`
+-- 表的结构 `sys_gen_curd_demo`
 --
 
-CREATE TABLE `hg_sys_gen_curd_demo` (
+CREATE TABLE `sys_gen_curd_demo` (
   `id` bigint(20) NOT NULL COMMENT 'ID',
   `category_id` bigint(20) NOT NULL COMMENT '分类ID',
   `title` varchar(64) NOT NULL COMMENT '标题',
@@ -1671,19 +1671,19 @@ CREATE TABLE `hg_sys_gen_curd_demo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_生成curd演示';
 
 --
--- 转存表中的数据 `hg_sys_gen_curd_demo`
+-- 转存表中的数据 `sys_gen_curd_demo`
 --
 
-INSERT INTO `hg_sys_gen_curd_demo` (`id`, `category_id`, `title`, `description`, `content`, `image`, `attachfile`, `city_id`, `switch`, `sort`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `sys_gen_curd_demo` (`id`, `category_id`, `title`, `description`, `content`, `image`, `attachfile`, `city_id`, `switch`, `sort`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, '测试标题', '描述', '<h2><strong>不知道写点啥！</strong></h2><p><br></p><iframe class=\"ql-video\" frameborder=\"0\" allowfullscreen=\"true\" src=\"https://media.w3.org/2010/05/sintel/trailer.mp4\"></iframe><p><br></p><p><img src=\"http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2023-02-09/cqdq9iuv0phsg8patk.png\"></p>', 'https://bufanyun.cn-bj.ufileos.com/hotgo/logo.sig.png', 'http://bufanyun.cn-bj.ufileos.com/hotgo/attachment/2022-12-30/cpf1x44idoycrtajf2.xlsx', 110102, 1, 10, 1, 0, 1, '2022-12-15 19:30:14', '2023-05-08 23:19:49', NULL);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_log`
+-- 表的结构 `sys_log`
 --
 
-CREATE TABLE `hg_sys_log` (
+CREATE TABLE `sys_log` (
   `id` bigint(20) NOT NULL COMMENT '日志ID',
   `req_id` varchar(50) DEFAULT NULL COMMENT '对外ID',
   `app_id` varchar(50) DEFAULT '' COMMENT '应用ID',
@@ -1712,10 +1712,10 @@ CREATE TABLE `hg_sys_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_login_log`
+-- 表的结构 `sys_login_log`
 --
 
-CREATE TABLE `hg_sys_login_log` (
+CREATE TABLE `sys_login_log` (
   `id` bigint(20) NOT NULL COMMENT '日志ID',
   `req_id` varchar(50) DEFAULT NULL COMMENT '请求ID',
   `member_id` bigint(20) DEFAULT '0' COMMENT '用户ID',
@@ -1732,10 +1732,10 @@ CREATE TABLE `hg_sys_login_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_provinces`
+-- 表的结构 `sys_provinces`
 --
 
-CREATE TABLE `hg_sys_provinces` (
+CREATE TABLE `sys_provinces` (
   `id` bigint(20) NOT NULL COMMENT '省市区ID',
   `title` varchar(50) NOT NULL DEFAULT '' COMMENT '栏目名称',
   `pinyin` varchar(100) DEFAULT '' COMMENT '拼音',
@@ -1751,10 +1751,10 @@ CREATE TABLE `hg_sys_provinces` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='系统_省市区编码';
 
 --
--- 转存表中的数据 `hg_sys_provinces`
+-- 转存表中的数据 `sys_provinces`
 --
 
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (810000, '香港特别行政区', 'X', '114.18612410257', '22.29358599328', 0, 1, 'tr_0 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (810100, '九龙', 'J', '101.51341566718', '29.006431902925', 810000, 2, 'tr_0 tr_810000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (810101, '观塘区', 'G', '114.23743100142', '22.316803500017', 810100, 3, 'tr_0 tr_810000 tr_810100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -2100,7 +2100,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (340100, '合肥市', 'H', '117.23344266498', '31.826577833687', 340000, 2, 'tr_0 tr_340000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (340200, '芜湖市', 'W', '118.43943137654', '31.358536655799', 340000, 2, 'tr_0 tr_340000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (340300, '蚌埠市', 'B', '117.39551332814', '32.921523704351', 340000, 2, 'tr_0 tr_340000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (340400, '淮南市', 'H', '117.00638885072', '32.631847399053', 340000, 2, 'tr_0 tr_340000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (340500, '马鞍山市', 'M', '118.51357957943', '31.676265597609', 340000, 2, 'tr_0 tr_340000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (340600, '淮北市', 'H', '116.80453726703', '33.961656300276', 340000, 2, 'tr_0 tr_340000 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -2448,7 +2448,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (140825, '新绛县', 'X', '111.23140649497', '35.622630103082', 140800, 3, 'tr_0 tr_140000 tr_140800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (140826, '绛县', 'J', '111.57548652056', '35.497276373896', 140800, 3, 'tr_0 tr_140000 tr_140800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (140827, '垣曲县', 'Y', '111.67660670572', '35.303014517418', 140800, 3, 'tr_0 tr_140000 tr_140800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (140828, '夏县', 'X', '111.2264314994', '35.147461779807', 140800, 3, 'tr_0 tr_140000 tr_140800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (140829, '平陆县', 'P', '111.22348047596', '34.842925154581', 140800, 3, 'tr_0 tr_140000 tr_140800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (140830, '芮城县', 'R', '110.7006115132', '34.699388110563', 140800, 3, 'tr_0 tr_140000 tr_140800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -2780,7 +2780,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (220871, '吉林白城经济开发区', 'J', '122.81641245977', '45.642168989302', 220800, 3, 'tr_0 tr_220000 tr_220800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (220881, '洮南市', 'T', '122.7944676826', '45.341131872567', 220800, 3, 'tr_0 tr_220000 tr_220800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (220882, '大安市', 'D', '124.29850428102', '45.513045149628', 220800, 3, 'tr_0 tr_220000 tr_220800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (222401, '延吉市', 'Y', '129.52052013726', '42.91271700988', 222400, 3, 'tr_0 tr_220000 tr_222400 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (222402, '图们市', 'T', '129.85038151375', '42.974283499075', 222400, 3, 'tr_0 tr_220000 tr_222400 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (222403, '敦化市', 'D', '128.23861239315', '43.378291274517', 222400, 3, 'tr_0 tr_220000 tr_222400 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -3113,7 +3113,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (330822, '常山县', 'C', '118.51755663118', '28.906997949113', 330800, 3, 'tr_0 tr_330000 tr_330800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (330824, '开化县', 'K', '118.42145932131', '29.143187521187', 330800, 3, 'tr_0 tr_330000 tr_330800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (330825, '龙游县', 'L', '119.17841825566', '29.034486553295', 330800, 3, 'tr_0 tr_330000 tr_330800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (330881, '江山市', 'J', '118.63358329793', '28.742868480118', 330800, 3, 'tr_0 tr_330000 tr_330800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (330902, '定海区', 'D', '122.11360080392', '30.025462378363', 330900, 3, 'tr_0 tr_330000 tr_330900 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (330903, '普陀区', 'P', '122.33154416586', '29.976835696536', 330900, 3, 'tr_0 tr_330000 tr_330900 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -3446,7 +3446,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (370104, '槐荫区', 'H', '116.90745837507', '36.657561734426', 370100, 3, 'tr_0 tr_370000 tr_370100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (370105, '天桥区', 'T', '116.99339917338', '36.684067874353', 370100, 3, 'tr_0 tr_370000 tr_370100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (370112, '历城区', 'L', '117.07158975107', '36.685655534711', 370100, 3, 'tr_0 tr_370000 tr_370100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (370113, '长清区', 'Z', '116.75838709095', '36.56021587991', 370100, 3, 'tr_0 tr_370000 tr_370100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (370114, '章丘区', 'Z', '117.53256537437', '36.68553275142', 370100, 3, 'tr_0 tr_370000 tr_370100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (370115, '济阳区', 'J', '117.18062113319', '36.983970518315', 370100, 3, 'tr_0 tr_370000 tr_370100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -3777,7 +3777,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (420103, '江汉区', 'J', '114.27750613182', '30.607282276827', 420100, 3, 'tr_0 tr_420000 tr_420100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (420104, '硚口区', 'Q', '114.22146031207', '30.587584340776', 420100, 3, 'tr_0 tr_420000 tr_420100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (420105, '汉阳区', 'H', '114.22544555464', '30.560052027443', 420100, 3, 'tr_0 tr_420000 tr_420100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (420106, '武昌区', 'W', '114.35362228468', '30.564860292785', 420100, 3, 'tr_0 tr_420000 tr_420100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (420107, '青山区', 'Q', '114.39149265697', '30.646593075543', 420100, 3, 'tr_0 tr_420000 tr_420100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (420111, '洪山区', 'H', '114.35045554602', '30.506333956808', 420100, 3, 'tr_0 tr_420000 tr_420100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -4109,7 +4109,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (441581, '陆丰市', 'L', '115.78802975191', '22.967876723873', 441500, 3, 'tr_0 tr_440000 tr_441500 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (441602, '源城区', 'Y', '114.70843899033', '23.740298338347', 441600, 3, 'tr_0 tr_440000 tr_441600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (441621, '紫金县', 'Z', '115.19044771834', '23.641430253189', 441600, 3, 'tr_0 tr_440000 tr_441600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (441622, '龙川县', 'L', '115.26655548485', '24.105850721955', 441600, 3, 'tr_0 tr_440000 tr_441600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (441623, '连平县', 'L', '114.49544419635', '24.375808067414', 441600, 3, 'tr_0 tr_440000 tr_441600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (441624, '和平县', 'H', '114.9454488143', '24.448252767689', 441600, 3, 'tr_0 tr_440000 tr_441600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -4440,7 +4440,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (510681, '广汉市', 'G', '104.28842189311', '30.982415239743', 510600, 3, 'tr_0 tr_510000 tr_510600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (510682, '什邡市', 'S', '104.17442710355', '31.132889048238', 510600, 3, 'tr_0 tr_510000 tr_510600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (510683, '绵竹市', 'M', '104.227609305', '31.343592258211', 510600, 3, 'tr_0 tr_510000 tr_510600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (510703, '涪城区', 'F', '104.76342033491', '31.46131438858', 510700, 3, 'tr_0 tr_510000 tr_510700 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (510704, '游仙区', 'Y', '104.77242899171', '31.479904474058', 510700, 3, 'tr_0 tr_510000 tr_510700 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (510705, '安州区', 'A', '104.5735550213', '31.540750527876', 510700, 3, 'tr_0 tr_510000 tr_510700 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -4772,7 +4772,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (532601, '文山市', 'W', '104.23854382746', '23.391944131908', 532600, 3, 'tr_0 tr_530000 tr_532600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (532622, '砚山县', 'Y', '104.3435508907', '23.6114865767', 532600, 3, 'tr_0 tr_530000 tr_532600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (532623, '西畴县', 'X', '104.67852542203', '23.443271275283', 532600, 3, 'tr_0 tr_530000 tr_532600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (532624, '麻栗坡县', 'M', '104.70954948078', '23.13158558356', 532600, 3, 'tr_0 tr_530000 tr_532600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (532625, '马关县', 'M', '104.40041497692', '23.018993577166', 532600, 3, 'tr_0 tr_530000 tr_532600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (532626, '丘北县', 'Q', '104.17344174074', '24.056993896218', 532600, 3, 'tr_0 tr_530000 tr_532600 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -5104,7 +5104,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (632724, '治多县', 'Z', '95.61979357437', '33.857953267719', 632700, 3, 'tr_0 tr_630000 tr_632700 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (632725, '囊谦县', 'N', '96.486918271283', '32.209194368698', 632700, 3, 'tr_0 tr_630000 tr_632700 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (632726, '曲麻莱县', 'Q', '95.803750013992', '34.132298666997', 632700, 3, 'tr_0 tr_630000 tr_632700 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (632801, '格尔木市', 'G', '94.933310210425', '36.412371046954', 632800, 3, 'tr_0 tr_630000 tr_632800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (632802, '德令哈市', 'D', '97.367470299975', '37.375345907463', 632800, 3, 'tr_0 tr_630000 tr_632800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (632803, '茫崖市', 'M', '90.87951750334', '38.261902814972', 632800, 3, 'tr_0 tr_630000 tr_632800 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -5435,7 +5435,7 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 (131126, '故城县', 'G', '115.97260216135', '37.353347552477', 131100, 3, 'tr_0 tr_130000 tr_131100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (131127, '景县', 'J', '116.2774107853', '37.698814551395', 131100, 3, 'tr_0 tr_130000 tr_131100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (131128, '阜城县', 'F', '116.18242153525', '37.868732457906', 131100, 3, 'tr_0 tr_130000 tr_131100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00');
-INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `level`, `tree`, `sort`, `status`, `created_at`, `updated_at`) VALUES
 (131171, '河北衡水高新技术产业开发区', 'H', '115.73456139967', '37.807821775773', 131100, 3, 'tr_0 tr_130000 tr_131100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (131172, '衡水滨湖新区', 'H', '115.70627999969', '37.701616037093', 131100, 3, 'tr_0 tr_130000 tr_131100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
 (131182, '深州市', 'S', '115.56636927583', '38.006941234922', 131100, 3, 'tr_0 tr_130000 tr_131100 ', 0, 1, '2022-10-07 20:42:26', '2022-11-01 00:00:00'),
@@ -5446,10 +5446,10 @@ INSERT INTO `hg_sys_provinces` (`id`, `title`, `pinyin`, `lng`, `lat`, `pid`, `l
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_serve_license`
+-- 表的结构 `sys_serve_license`
 --
 
-CREATE TABLE `hg_sys_serve_license` (
+CREATE TABLE `sys_serve_license` (
   `id` bigint(20) NOT NULL COMMENT '许可ID',
   `group` varchar(50) NOT NULL COMMENT '分组',
   `name` varchar(128) NOT NULL COMMENT '许可名称',
@@ -5472,20 +5472,20 @@ CREATE TABLE `hg_sys_serve_license` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_服务许可';
 
 --
--- 转存表中的数据 `hg_sys_serve_license`
+-- 转存表中的数据 `sys_serve_license`
 --
 
-INSERT INTO `hg_sys_serve_license` (`id`, `group`, `name`, `appid`, `secret_key`, `desc`, `remote_addr`, `online`, `online_limit`, `login_times`, `last_login_at`, `last_active_at`, `routes`, `allowed_ips`, `end_at`, `remark`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_serve_license` (`id`, `group`, `name`, `appid`, `secret_key`, `desc`, `remote_addr`, `online`, `online_limit`, `login_times`, `last_login_at`, `last_active_at`, `routes`, `allowed_ips`, `end_at`, `remark`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'cron', '默认的定时任务', '1002', 'hotgo', '这是默认的定时任务TCP客户端授权凭证。', '127.0.0.1:62905', 1, 1, 295, '2023-05-14 16:44:30', '2023-05-14 16:50:30', NULL, '127.0.0.1', '2033-03-09 00:00:00', '', 1, '2023-03-11 00:00:00', '2023-05-14 16:50:30'),
 (2, 'auth', '测试授权', 'mengshuai', '123456', '这是一个测试的授权服务，可以为第三方平台提供授权支持。', '127.0.0.1:51615', 1, 1, 0, '2023-05-04 23:23:52', '2023-05-04 23:23:52', NULL, '127.0.0.1', '2033-03-09 00:00:00', '', 1, '2023-03-11 00:00:00', '2023-05-04 23:23:52');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_serve_log`
+-- 表的结构 `sys_serve_log`
 --
 
-CREATE TABLE `hg_sys_serve_log` (
+CREATE TABLE `sys_serve_log` (
   `id` bigint(20) NOT NULL COMMENT '日志ID',
   `trace_id` varchar(50) DEFAULT NULL COMMENT '链路ID',
   `level_format` varchar(32) DEFAULT NULL COMMENT '日志级别',
@@ -5501,10 +5501,10 @@ CREATE TABLE `hg_sys_serve_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_sys_sms_log`
+-- 表的结构 `sys_sms_log`
 --
 
-CREATE TABLE `hg_sys_sms_log` (
+CREATE TABLE `sys_sms_log` (
   `id` bigint(20) NOT NULL COMMENT '主键',
   `event` varchar(64) NOT NULL COMMENT '事件',
   `mobile` varchar(20) NOT NULL DEFAULT '' COMMENT '手机号',
@@ -5517,20 +5517,20 @@ CREATE TABLE `hg_sys_sms_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统_短信发送记录';
 
 --
--- 转存表中的数据 `hg_sys_sms_log`
+-- 转存表中的数据 `sys_sms_log`
 --
 
-INSERT INTO `hg_sys_sms_log` (`id`, `event`, `mobile`, `code`, `times`, `ip`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `sys_sms_log` (`id`, `event`, `mobile`, `code`, `times`, `ip`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'code', '1530380571', '1234', 1, '39.165.245.100', 1, '2022-12-16 16:01:30', '2022-01-24 11:33:16'),
 (2, 'login', '15303830571', '1234', 0, '127.0.0.1', 1, '2023-04-10 13:53:33', '2023-04-10 13:53:33');
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `hg_test_category`
+-- 表的结构 `test_category`
 --
 
-CREATE TABLE `hg_test_category` (
+CREATE TABLE `test_category` (
   `id` bigint(20) NOT NULL COMMENT '分类ID',
   `name` varchar(255) NOT NULL COMMENT '分类名称',
   `description` varchar(255) DEFAULT NULL COMMENT '描述',
@@ -5543,10 +5543,10 @@ CREATE TABLE `hg_test_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='测试分类';
 
 --
--- 转存表中的数据 `hg_test_category`
+-- 转存表中的数据 `test_category`
 --
 
-INSERT INTO `hg_test_category` (`id`, `name`, `description`, `sort`, `remark`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `test_category` (`id`, `name`, `description`, `sort`, `remark`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, '官方新闻', NULL, 10, NULL, 1, '2023-01-03 00:00:00', '2023-01-03 00:00:00', NULL),
 (2, '移动应用', NULL, 20, NULL, 1, '2023-01-03 00:00:00', '2023-01-03 00:00:00', NULL),
 (3, '微信公众号', NULL, 30, NULL, 1, '2023-01-03 00:00:00', '2023-01-03 00:00:00', NULL),
@@ -5562,57 +5562,57 @@ INSERT INTO `hg_test_category` (`id`, `name`, `description`, `sort`, `remark`, `
 --
 
 --
--- 表的索引 `hg_addon_hgexample_table`
+-- 表的索引 `addon_hgexample_table`
 --
-ALTER TABLE `hg_addon_hgexample_table`
+ALTER TABLE `addon_hgexample_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `hg_admin_cash`
+-- 表的索引 `admin_cash`
 --
-ALTER TABLE `hg_admin_cash`
+ALTER TABLE `admin_cash`
   ADD PRIMARY KEY (`id`),
   ADD KEY `admin_id` (`member_id`);
 
 --
--- 表的索引 `hg_admin_credits_log`
+-- 表的索引 `admin_credits_log`
 --
-ALTER TABLE `hg_admin_credits_log`
+ALTER TABLE `admin_credits_log`
   ADD PRIMARY KEY (`id`),
   ADD KEY `member_id` (`member_id`);
 
 --
--- 表的索引 `hg_admin_dept`
+-- 表的索引 `admin_dept`
 --
-ALTER TABLE `hg_admin_dept`
+ALTER TABLE `admin_dept`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pid` (`pid`);
 
 --
--- 表的索引 `hg_admin_member`
+-- 表的索引 `admin_member`
 --
-ALTER TABLE `hg_admin_member`
+ALTER TABLE `admin_member`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `invite_code` (`invite_code`),
   ADD KEY `dept_id` (`dept_id`),
   ADD KEY `pid` (`pid`);
 
 --
--- 表的索引 `hg_admin_member_post`
+-- 表的索引 `admin_member_post`
 --
-ALTER TABLE `hg_admin_member_post`
+ALTER TABLE `admin_member_post`
   ADD PRIMARY KEY (`member_id`,`post_id`);
 
 --
--- 表的索引 `hg_admin_member_role`
+-- 表的索引 `admin_member_role`
 --
-ALTER TABLE `hg_admin_member_role`
+ALTER TABLE `admin_member_role`
   ADD PRIMARY KEY (`member_id`,`role_id`);
 
 --
--- 表的索引 `hg_admin_menu`
+-- 表的索引 `admin_menu`
 --
-ALTER TABLE `hg_admin_menu`
+ALTER TABLE `admin_menu`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`),
   ADD KEY `pid` (`pid`),
@@ -5620,206 +5620,206 @@ ALTER TABLE `hg_admin_menu`
   ADD KEY `type` (`type`);
 
 --
--- 表的索引 `hg_admin_notice`
+-- 表的索引 `admin_notice`
 --
-ALTER TABLE `hg_admin_notice`
+ALTER TABLE `admin_notice`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `hg_admin_notice_read`
+-- 表的索引 `admin_notice_read`
 --
-ALTER TABLE `hg_admin_notice_read`
+ALTER TABLE `admin_notice_read`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `notice_id` (`notice_id`,`member_id`);
 
 --
--- 表的索引 `hg_admin_oauth`
+-- 表的索引 `admin_oauth`
 --
-ALTER TABLE `hg_admin_oauth`
+ALTER TABLE `admin_oauth`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_client` (`oauth_client`,`oauth_openid`),
   ADD KEY `member_id` (`member_id`);
 
 --
--- 表的索引 `hg_admin_order`
+-- 表的索引 `admin_order`
 --
-ALTER TABLE `hg_admin_order`
+ALTER TABLE `admin_order`
   ADD PRIMARY KEY (`id`),
   ADD KEY `order_sn` (`order_sn`),
   ADD KEY `member_id` (`member_id`);
 
 --
--- 表的索引 `hg_admin_post`
+-- 表的索引 `admin_post`
 --
-ALTER TABLE `hg_admin_post`
+ALTER TABLE `admin_post`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `hg_admin_role`
+-- 表的索引 `admin_role`
 --
-ALTER TABLE `hg_admin_role`
+ALTER TABLE `admin_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `hg_admin_role_casbin`
+-- 表的索引 `admin_role_casbin`
 --
-ALTER TABLE `hg_admin_role_casbin`
+ALTER TABLE `admin_role_casbin`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
--- 表的索引 `hg_admin_role_menu`
+-- 表的索引 `admin_role_menu`
 --
-ALTER TABLE `hg_admin_role_menu`
+ALTER TABLE `admin_role_menu`
   ADD PRIMARY KEY (`role_id`,`menu_id`);
 
 --
--- 表的索引 `hg_pay_log`
+-- 表的索引 `pay_log`
 --
-ALTER TABLE `hg_pay_log`
+ALTER TABLE `pay_log`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `order_sn` (`order_sn`),
   ADD KEY `member_id` (`member_id`);
 
 --
--- 表的索引 `hg_pay_refund`
+-- 表的索引 `pay_refund`
 --
-ALTER TABLE `hg_pay_refund`
+ALTER TABLE `pay_refund`
   ADD PRIMARY KEY (`id`),
   ADD KEY `order_sn` (`order_sn`);
 
 --
--- 表的索引 `hg_sys_addons_config`
+-- 表的索引 `sys_addons_config`
 --
-ALTER TABLE `hg_sys_addons_config`
+ALTER TABLE `sys_addons_config`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `addon_name_2` (`addon_name`,`key`),
   ADD KEY `addon_name` (`addon_name`),
   ADD KEY `addon_name_3` (`addon_name`,`group`);
 
 --
--- 表的索引 `hg_sys_addons_install`
+-- 表的索引 `sys_addons_install`
 --
-ALTER TABLE `hg_sys_addons_install`
+ALTER TABLE `sys_addons_install`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- 表的索引 `hg_sys_attachment`
+-- 表的索引 `sys_attachment`
 --
-ALTER TABLE `hg_sys_attachment`
+ALTER TABLE `sys_attachment`
   ADD PRIMARY KEY (`id`),
   ADD KEY `md5` (`md5`);
 
 --
--- 表的索引 `hg_sys_blacklist`
+-- 表的索引 `sys_blacklist`
 --
-ALTER TABLE `hg_sys_blacklist`
+ALTER TABLE `sys_blacklist`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD UNIQUE KEY `name` (`ip`);
 
 --
--- 表的索引 `hg_sys_config`
+-- 表的索引 `sys_config`
 --
-ALTER TABLE `hg_sys_config`
+ALTER TABLE `sys_config`
   ADD PRIMARY KEY (`id`),
   ADD KEY `group` (`group`),
   ADD KEY `key` (`key`);
 
 --
--- 表的索引 `hg_sys_cron`
+-- 表的索引 `sys_cron`
 --
-ALTER TABLE `hg_sys_cron`
+ALTER TABLE `sys_cron`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- 表的索引 `hg_sys_cron_group`
+-- 表的索引 `sys_cron_group`
 --
-ALTER TABLE `hg_sys_cron_group`
+ALTER TABLE `sys_cron_group`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
--- 表的索引 `hg_sys_dict_data`
+-- 表的索引 `sys_dict_data`
 --
-ALTER TABLE `hg_sys_dict_data`
+ALTER TABLE `sys_dict_data`
   ADD PRIMARY KEY (`id`),
   ADD KEY `dict_data_idx` (`type`);
 
 --
--- 表的索引 `hg_sys_dict_type`
+-- 表的索引 `sys_dict_type`
 --
-ALTER TABLE `hg_sys_dict_type`
+ALTER TABLE `sys_dict_type`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD UNIQUE KEY `dict_type` (`type`);
 
 --
--- 表的索引 `hg_sys_ems_log`
+-- 表的索引 `sys_ems_log`
 --
-ALTER TABLE `hg_sys_ems_log`
+ALTER TABLE `sys_ems_log`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD KEY `email` (`email`);
 
 --
--- 表的索引 `hg_sys_gen_codes`
+-- 表的索引 `sys_gen_codes`
 --
-ALTER TABLE `hg_sys_gen_codes`
+ALTER TABLE `sys_gen_codes`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
--- 表的索引 `hg_sys_gen_curd_demo`
+-- 表的索引 `sys_gen_curd_demo`
 --
-ALTER TABLE `hg_sys_gen_curd_demo`
+ALTER TABLE `sys_gen_curd_demo`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `hg_sys_log`
+-- 表的索引 `sys_log`
 --
-ALTER TABLE `hg_sys_log`
+ALTER TABLE `sys_log`
   ADD PRIMARY KEY (`id`),
   ADD KEY `error_code` (`error_code`),
   ADD KEY `req_id` (`req_id`);
 
 --
--- 表的索引 `hg_sys_login_log`
+-- 表的索引 `sys_login_log`
 --
-ALTER TABLE `hg_sys_login_log`
+ALTER TABLE `sys_login_log`
   ADD PRIMARY KEY (`id`),
   ADD KEY `member_id` (`member_id`),
   ADD KEY `req_id` (`req_id`);
 
 --
--- 表的索引 `hg_sys_provinces`
+-- 表的索引 `sys_provinces`
 --
-ALTER TABLE `hg_sys_provinces`
+ALTER TABLE `sys_provinces`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pid` (`pid`);
 
 --
--- 表的索引 `hg_sys_serve_license`
+-- 表的索引 `sys_serve_license`
 --
-ALTER TABLE `hg_sys_serve_license`
+ALTER TABLE `sys_serve_license`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `appid` (`appid`);
 
 --
--- 表的索引 `hg_sys_serve_log`
+-- 表的索引 `sys_serve_log`
 --
-ALTER TABLE `hg_sys_serve_log`
+ALTER TABLE `sys_serve_log`
   ADD PRIMARY KEY (`id`),
   ADD KEY `member_id` (`level_format`),
   ADD KEY `traceid` (`trace_id`);
 
 --
--- 表的索引 `hg_sys_sms_log`
+-- 表的索引 `sys_sms_log`
 --
-ALTER TABLE `hg_sys_sms_log`
+ALTER TABLE `sys_sms_log`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD KEY `mobile` (`mobile`);
 
 --
--- 表的索引 `hg_test_category`
+-- 表的索引 `test_category`
 --
-ALTER TABLE `hg_test_category`
+ALTER TABLE `test_category`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -5827,201 +5827,201 @@ ALTER TABLE `hg_test_category`
 --
 
 --
--- 使用表AUTO_INCREMENT `hg_addon_hgexample_table`
+-- 使用表AUTO_INCREMENT `addon_hgexample_table`
 --
-ALTER TABLE `hg_addon_hgexample_table`
+ALTER TABLE `addon_hgexample_table`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID', AUTO_INCREMENT=3;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_cash`
+-- 使用表AUTO_INCREMENT `admin_cash`
 --
-ALTER TABLE `hg_admin_cash`
+ALTER TABLE `admin_cash`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID', AUTO_INCREMENT=17;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_credits_log`
+-- 使用表AUTO_INCREMENT `admin_credits_log`
 --
-ALTER TABLE `hg_admin_credits_log`
+ALTER TABLE `admin_credits_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '变动ID', AUTO_INCREMENT=18;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_dept`
+-- 使用表AUTO_INCREMENT `admin_dept`
 --
-ALTER TABLE `hg_admin_dept`
+ALTER TABLE `admin_dept`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '部门ID', AUTO_INCREMENT=114;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_member`
+-- 使用表AUTO_INCREMENT `admin_member`
 --
-ALTER TABLE `hg_admin_member`
+ALTER TABLE `admin_member`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '管理员ID', AUTO_INCREMENT=14;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_menu`
+-- 使用表AUTO_INCREMENT `admin_menu`
 --
-ALTER TABLE `hg_admin_menu`
+ALTER TABLE `admin_menu`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '菜单ID', AUTO_INCREMENT=2281;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_notice`
+-- 使用表AUTO_INCREMENT `admin_notice`
 --
-ALTER TABLE `hg_admin_notice`
+ALTER TABLE `admin_notice`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '公告ID', AUTO_INCREMENT=35;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_notice_read`
+-- 使用表AUTO_INCREMENT `admin_notice_read`
 --
-ALTER TABLE `hg_admin_notice_read`
+ALTER TABLE `admin_notice_read`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '记录ID', AUTO_INCREMENT=6;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_oauth`
+-- 使用表AUTO_INCREMENT `admin_oauth`
 --
-ALTER TABLE `hg_admin_oauth`
+ALTER TABLE `admin_oauth`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=4;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_order`
+-- 使用表AUTO_INCREMENT `admin_order`
 --
-ALTER TABLE `hg_admin_order`
+ALTER TABLE `admin_order`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=152;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_post`
+-- 使用表AUTO_INCREMENT `admin_post`
 --
-ALTER TABLE `hg_admin_post`
+ALTER TABLE `admin_post`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '岗位ID', AUTO_INCREMENT=7;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_role`
+-- 使用表AUTO_INCREMENT `admin_role`
 --
-ALTER TABLE `hg_admin_role`
+ALTER TABLE `admin_role`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '角色ID', AUTO_INCREMENT=209;
 
 --
--- 使用表AUTO_INCREMENT `hg_admin_role_casbin`
+-- 使用表AUTO_INCREMENT `admin_role_casbin`
 --
-ALTER TABLE `hg_admin_role_casbin`
+ALTER TABLE `admin_role_casbin`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28232;
 
 --
--- 使用表AUTO_INCREMENT `hg_pay_log`
+-- 使用表AUTO_INCREMENT `pay_log`
 --
-ALTER TABLE `hg_pay_log`
+ALTER TABLE `pay_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=171;
 
 --
--- 使用表AUTO_INCREMENT `hg_pay_refund`
+-- 使用表AUTO_INCREMENT `pay_refund`
 --
-ALTER TABLE `hg_pay_refund`
+ALTER TABLE `pay_refund`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键ID', AUTO_INCREMENT=4;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_addons_config`
+-- 使用表AUTO_INCREMENT `sys_addons_config`
 --
-ALTER TABLE `hg_sys_addons_config`
+ALTER TABLE `sys_addons_config`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '配置ID', AUTO_INCREMENT=2;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_addons_install`
+-- 使用表AUTO_INCREMENT `sys_addons_install`
 --
-ALTER TABLE `hg_sys_addons_install`
+ALTER TABLE `sys_addons_install`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=2;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_attachment`
+-- 使用表AUTO_INCREMENT `sys_attachment`
 --
-ALTER TABLE `hg_sys_attachment`
+ALTER TABLE `sys_attachment`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '文件ID', AUTO_INCREMENT=56;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_blacklist`
+-- 使用表AUTO_INCREMENT `sys_blacklist`
 --
-ALTER TABLE `hg_sys_blacklist`
+ALTER TABLE `sys_blacklist`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '黑名单ID', AUTO_INCREMENT=8;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_config`
+-- 使用表AUTO_INCREMENT `sys_config`
 --
-ALTER TABLE `hg_sys_config`
+ALTER TABLE `sys_config`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '配置ID', AUTO_INCREMENT=122;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_cron`
+-- 使用表AUTO_INCREMENT `sys_cron`
 --
-ALTER TABLE `hg_sys_cron`
+ALTER TABLE `sys_cron`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '任务ID', AUTO_INCREMENT=4;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_cron_group`
+-- 使用表AUTO_INCREMENT `sys_cron_group`
 --
-ALTER TABLE `hg_sys_cron_group`
+ALTER TABLE `sys_cron_group`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '任务分组ID', AUTO_INCREMENT=3;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_dict_data`
+-- 使用表AUTO_INCREMENT `sys_dict_data`
 --
-ALTER TABLE `hg_sys_dict_data`
+ALTER TABLE `sys_dict_data`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '字典数据ID', AUTO_INCREMENT=157;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_dict_type`
+-- 使用表AUTO_INCREMENT `sys_dict_type`
 --
-ALTER TABLE `hg_sys_dict_type`
+ALTER TABLE `sys_dict_type`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '字典类型ID', AUTO_INCREMENT=39;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_ems_log`
+-- 使用表AUTO_INCREMENT `sys_ems_log`
 --
-ALTER TABLE `hg_sys_ems_log`
+ALTER TABLE `sys_ems_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=5;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_gen_codes`
+-- 使用表AUTO_INCREMENT `sys_gen_codes`
 --
-ALTER TABLE `hg_sys_gen_codes`
+ALTER TABLE `sys_gen_codes`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '生成ID', AUTO_INCREMENT=4;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_gen_curd_demo`
+-- 使用表AUTO_INCREMENT `sys_gen_curd_demo`
 --
-ALTER TABLE `hg_sys_gen_curd_demo`
+ALTER TABLE `sys_gen_curd_demo`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID', AUTO_INCREMENT=2;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_log`
+-- 使用表AUTO_INCREMENT `sys_log`
 --
-ALTER TABLE `hg_sys_log`
+ALTER TABLE `sys_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '日志ID';
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_login_log`
+-- 使用表AUTO_INCREMENT `sys_login_log`
 --
-ALTER TABLE `hg_sys_login_log`
+ALTER TABLE `sys_login_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '日志ID';
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_serve_license`
+-- 使用表AUTO_INCREMENT `sys_serve_license`
 --
-ALTER TABLE `hg_sys_serve_license`
+ALTER TABLE `sys_serve_license`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '许可ID', AUTO_INCREMENT=4;
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_serve_log`
+-- 使用表AUTO_INCREMENT `sys_serve_log`
 --
-ALTER TABLE `hg_sys_serve_log`
+ALTER TABLE `sys_serve_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '日志ID';
 
 --
--- 使用表AUTO_INCREMENT `hg_sys_sms_log`
+-- 使用表AUTO_INCREMENT `sys_sms_log`
 --
-ALTER TABLE `hg_sys_sms_log`
+ALTER TABLE `sys_sms_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键', AUTO_INCREMENT=6;
 
 --
--- 使用表AUTO_INCREMENT `hg_test_category`
+-- 使用表AUTO_INCREMENT `test_category`
 --
-ALTER TABLE `hg_test_category`
+ALTER TABLE `test_category`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '分类ID', AUTO_INCREMENT=10;
 COMMIT;
 
