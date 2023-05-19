@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysSmsLogDao is the data access object for table hg_sys_sms_log.
+// SysSmsLogDao is the data access object for table sys_sms_log.
 type SysSmsLogDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns SysSmsLogColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysSmsLogColumns defines and stores column names for table hg_sys_sms_log.
+// SysSmsLogColumns defines and stores column names for table sys_sms_log.
 type SysSmsLogColumns struct {
 	Id        string // 主键
 	Event     string // 事件
@@ -31,7 +31,7 @@ type SysSmsLogColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// sysSmsLogColumns holds the columns for table hg_sys_sms_log.
+// sysSmsLogColumns holds the columns for table sys_sms_log.
 var sysSmsLogColumns = SysSmsLogColumns{
 	Id:        "id",
 	Event:     "event",
@@ -48,7 +48,7 @@ var sysSmsLogColumns = SysSmsLogColumns{
 func NewSysSmsLogDao() *SysSmsLogDao {
 	return &SysSmsLogDao{
 		group:   "default",
-		table:   "hg_sys_sms_log",
+		table:   "sys_sms_log",
 		columns: sysSmsLogColumns,
 	}
 }

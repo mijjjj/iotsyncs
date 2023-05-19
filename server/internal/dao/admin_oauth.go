@@ -11,14 +11,14 @@ import (
 // internalAdminOauthDao is internal type for wrapping internal DAO implements.
 type internalAdminOauthDao = *internal.AdminOauthDao
 
-// adminOauthDao is the data access object for table hg_admin_oauth.
+// adminOauthDao is the data access object for table admin_oauth.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminOauthDao struct {
 	internalAdminOauthDao
 }
 
 var (
-	// AdminOauth is globally public accessible object for table hg_admin_oauth operations.
+	// AdminOauth is globally public accessible object for table admin_oauth operations.
 	AdminOauth = adminOauthDao{
 		internal.NewAdminOauthDao(),
 	}

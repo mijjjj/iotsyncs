@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// TestCategoryDao is the data access object for table hg_test_category.
+// TestCategoryDao is the data access object for table test_category.
 type TestCategoryDao struct {
 	table   string              // table is the underlying table name of the DAO.
 	group   string              // group is the database configuration group name of current DAO.
 	columns TestCategoryColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// TestCategoryColumns defines and stores column names for table hg_test_category.
+// TestCategoryColumns defines and stores column names for table test_category.
 type TestCategoryColumns struct {
 	Id          string // 分类ID
 	Name        string // 分类名称
@@ -31,7 +31,7 @@ type TestCategoryColumns struct {
 	DeletedAt   string // 删除时间
 }
 
-// testCategoryColumns holds the columns for table hg_test_category.
+// testCategoryColumns holds the columns for table test_category.
 var testCategoryColumns = TestCategoryColumns{
 	Id:          "id",
 	Name:        "name",
@@ -48,7 +48,7 @@ var testCategoryColumns = TestCategoryColumns{
 func NewTestCategoryDao() *TestCategoryDao {
 	return &TestCategoryDao{
 		group:   "default",
-		table:   "hg_test_category",
+		table:   "test_category",
 		columns: testCategoryColumns,
 	}
 }

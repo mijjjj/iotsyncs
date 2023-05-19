@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysServeLicenseDao is the data access object for table hg_sys_serve_license.
+// SysServeLicenseDao is the data access object for table sys_serve_license.
 type SysServeLicenseDao struct {
 	table   string                 // table is the underlying table name of the DAO.
 	group   string                 // group is the database configuration group name of current DAO.
 	columns SysServeLicenseColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysServeLicenseColumns defines and stores column names for table hg_sys_serve_license.
+// SysServeLicenseColumns defines and stores column names for table sys_serve_license.
 type SysServeLicenseColumns struct {
 	Id           string // 许可ID
 	Group        string // 分组
@@ -41,7 +41,7 @@ type SysServeLicenseColumns struct {
 	UpdatedAt    string // 修改时间
 }
 
-// sysServeLicenseColumns holds the columns for table hg_sys_serve_license.
+// sysServeLicenseColumns holds the columns for table sys_serve_license.
 var sysServeLicenseColumns = SysServeLicenseColumns{
 	Id:           "id",
 	Group:        "group",
@@ -68,7 +68,7 @@ var sysServeLicenseColumns = SysServeLicenseColumns{
 func NewSysServeLicenseDao() *SysServeLicenseDao {
 	return &SysServeLicenseDao{
 		group:   "default",
-		table:   "hg_sys_serve_license",
+		table:   "sys_serve_license",
 		columns: sysServeLicenseColumns,
 	}
 }

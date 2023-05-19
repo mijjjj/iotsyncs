@@ -11,14 +11,14 @@ import (
 // internalAdminCreditsLogDao is internal type for wrapping internal DAO implements.
 type internalAdminCreditsLogDao = *internal.AdminCreditsLogDao
 
-// adminCreditsLogDao is the data access object for table hg_admin_credits_log.
+// adminCreditsLogDao is the data access object for table admin_credits_log.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminCreditsLogDao struct {
 	internalAdminCreditsLogDao
 }
 
 var (
-	// AdminCreditsLog is globally public accessible object for table hg_admin_credits_log operations.
+	// AdminCreditsLog is globally public accessible object for table admin_credits_log operations.
 	AdminCreditsLog = adminCreditsLogDao{
 		internal.NewAdminCreditsLogDao(),
 	}

@@ -11,14 +11,14 @@ import (
 // internalSysDictDataDao is internal type for wrapping internal DAO implements.
 type internalSysDictDataDao = *internal.SysDictDataDao
 
-// sysDictDataDao is the data access object for table hg_sys_dict_data.
+// sysDictDataDao is the data access object for table sys_dict_data.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysDictDataDao struct {
 	internalSysDictDataDao
 }
 
 var (
-	// SysDictData is globally common accessible object for table hg_sys_dict_data operations.
+	// SysDictData is globally common accessible object for table sys_dict_data operations.
 	SysDictData = sysDictDataDao{
 		internal.NewSysDictDataDao(),
 	}

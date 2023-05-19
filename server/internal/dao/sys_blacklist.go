@@ -11,14 +11,14 @@ import (
 // internalSysBlacklistDao is internal type for wrapping internal DAO implements.
 type internalSysBlacklistDao = *internal.SysBlacklistDao
 
-// sysBlacklistDao is the data access object for table hg_sys_blacklist.
+// sysBlacklistDao is the data access object for table sys_blacklist.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysBlacklistDao struct {
 	internalSysBlacklistDao
 }
 
 var (
-	// SysBlacklist is globally public accessible object for table hg_sys_blacklist operations.
+	// SysBlacklist is globally public accessible object for table sys_blacklist operations.
 	SysBlacklist = sysBlacklistDao{
 		internal.NewSysBlacklistDao(),
 	}

@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// PayRefundDao is the data access object for table hg_pay_refund.
+// PayRefundDao is the data access object for table pay_refund.
 type PayRefundDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns PayRefundColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// PayRefundColumns defines and stores column names for table hg_pay_refund.
+// PayRefundColumns defines and stores column names for table pay_refund.
 type PayRefundColumns struct {
 	Id            string // 主键ID
 	MemberId      string // 会员ID
@@ -35,7 +35,7 @@ type PayRefundColumns struct {
 	UpdatedAt     string // 更新时间
 }
 
-// payRefundColumns holds the columns for table hg_pay_refund.
+// payRefundColumns holds the columns for table pay_refund.
 var payRefundColumns = PayRefundColumns{
 	Id:            "id",
 	MemberId:      "member_id",
@@ -56,7 +56,7 @@ var payRefundColumns = PayRefundColumns{
 func NewPayRefundDao() *PayRefundDao {
 	return &PayRefundDao{
 		group:   "default",
-		table:   "hg_pay_refund",
+		table:   "pay_refund",
 		columns: payRefundColumns,
 	}
 }

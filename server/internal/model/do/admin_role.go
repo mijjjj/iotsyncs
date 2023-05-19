@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminRole is the golang structure of table hg_admin_role for DAO operations like Where/Data.
+// AdminRole is the golang structure of table admin_role for DAO operations like Where/Data.
 type AdminRole struct {
-	g.Meta     `orm:"table:hg_admin_role, do:true"`
+	g.Meta     `orm:"table:admin_role, do:true"`
 	Id         interface{} // 角色ID
 	Name       interface{} // 角色名称
 	Key        interface{} // 角色权限字符串

@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminMenuDao is the data access object for table hg_admin_menu.
+// AdminMenuDao is the data access object for table admin_menu.
 type AdminMenuDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns AdminMenuColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminMenuColumns defines and stores column names for table hg_admin_menu.
+// AdminMenuColumns defines and stores column names for table admin_menu.
 type AdminMenuColumns struct {
 	Id             string // 菜单ID
 	Pid            string // 父菜单ID
@@ -48,7 +48,7 @@ type AdminMenuColumns struct {
 	UpdatedAt      string // 更新时间
 }
 
-// adminMenuColumns holds the columns for table hg_admin_menu.
+// adminMenuColumns holds the columns for table admin_menu.
 var adminMenuColumns = AdminMenuColumns{
 	Id:             "id",
 	Pid:            "pid",
@@ -82,7 +82,7 @@ var adminMenuColumns = AdminMenuColumns{
 func NewAdminMenuDao() *AdminMenuDao {
 	return &AdminMenuDao{
 		group:   "default",
-		table:   "hg_admin_menu",
+		table:   "admin_menu",
 		columns: adminMenuColumns,
 	}
 }

@@ -9,15 +9,16 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"math"
+	"strings"
+
 	"github.com/casbin/casbin/v2/model"
 	"github.com/casbin/casbin/v2/persist"
 	"github.com/gogf/gf/v2/database/gdb"
-	"math"
-	"strings"
 )
 
 const (
-	defaultTableName     = "hg_admin_role_casbin"
+	defaultTableName     = "admin_role_casbin"
 	dropPolicyTableSql   = `DROP TABLE IF EXISTS %s`
 	createPolicyTableSql = `
 CREATE TABLE IF NOT EXISTS %s (

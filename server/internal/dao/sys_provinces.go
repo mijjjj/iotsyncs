@@ -11,14 +11,14 @@ import (
 // internalSysProvincesDao is internal type for wrapping internal DAO implements.
 type internalSysProvincesDao = *internal.SysProvincesDao
 
-// sysProvincesDao is the data access object for table hg_sys_provinces.
+// sysProvincesDao is the data access object for table sys_provinces.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysProvincesDao struct {
 	internalSysProvincesDao
 }
 
 var (
-	// SysProvinces is globally common accessible object for table hg_sys_provinces operations.
+	// SysProvinces is globally common accessible object for table sys_provinces operations.
 	SysProvinces = sysProvincesDao{
 		internal.NewSysProvincesDao(),
 	}

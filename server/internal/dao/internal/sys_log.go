@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysLogDao is the data access object for table hg_sys_log.
+// SysLogDao is the data access object for table sys_log.
 type SysLogDao struct {
 	table   string        // table is the underlying table name of the DAO.
 	group   string        // group is the database configuration group name of current DAO.
 	columns SysLogColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysLogColumns defines and stores column names for table hg_sys_log.
+// SysLogColumns defines and stores column names for table sys_log.
 type SysLogColumns struct {
 	Id         string // 日志ID
 	ReqId      string // 对外ID
@@ -45,7 +45,7 @@ type SysLogColumns struct {
 	UpdatedAt  string // 修改时间
 }
 
-// sysLogColumns holds the columns for table hg_sys_log.
+// sysLogColumns holds the columns for table sys_log.
 var sysLogColumns = SysLogColumns{
 	Id:         "id",
 	ReqId:      "req_id",
@@ -76,7 +76,7 @@ var sysLogColumns = SysLogColumns{
 func NewSysLogDao() *SysLogDao {
 	return &SysLogDao{
 		group:   "default",
-		table:   "hg_sys_log",
+		table:   "sys_log",
 		columns: sysLogColumns,
 	}
 }

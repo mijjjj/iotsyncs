@@ -11,14 +11,14 @@ import (
 // internalAdminNoticeDao is internal type for wrapping internal DAO implements.
 type internalAdminNoticeDao = *internal.AdminNoticeDao
 
-// adminNoticeDao is the data access object for table hg_admin_notice.
+// adminNoticeDao is the data access object for table admin_notice.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminNoticeDao struct {
 	internalAdminNoticeDao
 }
 
 var (
-	// AdminNotice is globally common accessible object for table hg_admin_notice operations.
+	// AdminNotice is globally common accessible object for table admin_notice operations.
 	AdminNotice = adminNoticeDao{
 		internal.NewAdminNoticeDao(),
 	}

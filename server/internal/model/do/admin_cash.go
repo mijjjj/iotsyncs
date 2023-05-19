@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminCash is the golang structure of table hg_admin_cash for DAO operations like Where/Data.
+// AdminCash is the golang structure of table admin_cash for DAO operations like Where/Data.
 type AdminCash struct {
-	g.Meta    `orm:"table:hg_admin_cash, do:true"`
+	g.Meta    `orm:"table:admin_cash, do:true"`
 	Id        interface{} // ID
 	MemberId  interface{} // 管理员ID
 	Money     interface{} // 提现金额

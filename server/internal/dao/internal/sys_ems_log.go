@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysEmsLogDao is the data access object for table hg_sys_ems_log.
+// SysEmsLogDao is the data access object for table sys_ems_log.
 type SysEmsLogDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns SysEmsLogColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysEmsLogColumns defines and stores column names for table hg_sys_ems_log.
+// SysEmsLogColumns defines and stores column names for table sys_ems_log.
 type SysEmsLogColumns struct {
 	Id        string // 主键
 	Event     string // 事件
@@ -32,7 +32,7 @@ type SysEmsLogColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// sysEmsLogColumns holds the columns for table hg_sys_ems_log.
+// sysEmsLogColumns holds the columns for table sys_ems_log.
 var sysEmsLogColumns = SysEmsLogColumns{
 	Id:        "id",
 	Event:     "event",
@@ -50,7 +50,7 @@ var sysEmsLogColumns = SysEmsLogColumns{
 func NewSysEmsLogDao() *SysEmsLogDao {
 	return &SysEmsLogDao{
 		group:   "default",
-		table:   "hg_sys_ems_log",
+		table:   "sys_ems_log",
 		columns: sysEmsLogColumns,
 	}
 }

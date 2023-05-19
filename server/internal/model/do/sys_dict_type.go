@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysDictType is the golang structure of table hg_sys_dict_type for DAO operations like Where/Data.
+// SysDictType is the golang structure of table sys_dict_type for DAO operations like Where/Data.
 type SysDictType struct {
-	g.Meta    `orm:"table:hg_sys_dict_type, do:true"`
+	g.Meta    `orm:"table:sys_dict_type, do:true"`
 	Id        interface{} // 字典类型ID
 	Pid       interface{} // 父类字典类型ID
 	Name      interface{} // 字典类型名称

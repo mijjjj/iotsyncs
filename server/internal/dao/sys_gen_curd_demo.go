@@ -11,14 +11,14 @@ import (
 // internalSysGenCurdDemoDao is internal type for wrapping internal DAO implements.
 type internalSysGenCurdDemoDao = *internal.SysGenCurdDemoDao
 
-// sysGenCurdDemoDao is the data access object for table hg_sys_gen_curd_demo.
+// sysGenCurdDemoDao is the data access object for table sys_gen_curd_demo.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysGenCurdDemoDao struct {
 	internalSysGenCurdDemoDao
 }
 
 var (
-	// SysGenCurdDemo is globally public accessible object for table hg_sys_gen_curd_demo operations.
+	// SysGenCurdDemo is globally public accessible object for table sys_gen_curd_demo operations.
 	SysGenCurdDemo = sysGenCurdDemoDao{
 		internal.NewSysGenCurdDemoDao(),
 	}

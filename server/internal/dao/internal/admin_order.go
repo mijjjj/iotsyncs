@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminOrderDao is the data access object for table hg_admin_order.
+// AdminOrderDao is the data access object for table admin_order.
 type AdminOrderDao struct {
 	table   string            // table is the underlying table name of the DAO.
 	group   string            // group is the database configuration group name of current DAO.
 	columns AdminOrderColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminOrderColumns defines and stores column names for table hg_admin_order.
+// AdminOrderColumns defines and stores column names for table admin_order.
 type AdminOrderColumns struct {
 	Id                 string // 主键
 	MemberId           string // 管理员id
@@ -34,7 +34,7 @@ type AdminOrderColumns struct {
 	UpdatedAt          string // 修改时间
 }
 
-// adminOrderColumns holds the columns for table hg_admin_order.
+// adminOrderColumns holds the columns for table admin_order.
 var adminOrderColumns = AdminOrderColumns{
 	Id:                 "id",
 	MemberId:           "member_id",
@@ -54,7 +54,7 @@ var adminOrderColumns = AdminOrderColumns{
 func NewAdminOrderDao() *AdminOrderDao {
 	return &AdminOrderDao{
 		group:   "default",
-		table:   "hg_admin_order",
+		table:   "admin_order",
 		columns: adminOrderColumns,
 	}
 }

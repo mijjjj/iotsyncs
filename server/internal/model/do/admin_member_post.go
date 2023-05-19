@@ -8,9 +8,9 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminMemberPost is the golang structure of table hg_admin_member_post for DAO operations like Where/Data.
+// AdminMemberPost is the golang structure of table admin_member_post for DAO operations like Where/Data.
 type AdminMemberPost struct {
-	g.Meta   `orm:"table:hg_admin_member_post, do:true"`
+	g.Meta   `orm:"table:admin_member_post, do:true"`
 	MemberId interface{} // 管理员ID
 	PostId   interface{} // 岗位ID
 }

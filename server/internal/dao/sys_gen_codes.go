@@ -11,14 +11,14 @@ import (
 // internalSysGenCodesDao is internal type for wrapping internal DAO implements.
 type internalSysGenCodesDao = *internal.SysGenCodesDao
 
-// sysGenCodesDao is the data access object for table hg_sys_gen_codes.
+// sysGenCodesDao is the data access object for table sys_gen_codes.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysGenCodesDao struct {
 	internalSysGenCodesDao
 }
 
 var (
-	// SysGenCodes is globally public accessible object for table hg_sys_gen_codes operations.
+	// SysGenCodes is globally public accessible object for table sys_gen_codes operations.
 	SysGenCodes = sysGenCodesDao{
 		internal.NewSysGenCodesDao(),
 	}

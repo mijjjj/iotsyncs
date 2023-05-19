@@ -11,14 +11,14 @@ import (
 // internalAdminMemberRoleDao is internal type for wrapping internal DAO implements.
 type internalAdminMemberRoleDao = *internal.AdminMemberRoleDao
 
-// adminMemberRoleDao is the data access object for table hg_admin_member_role.
+// adminMemberRoleDao is the data access object for table admin_member_role.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminMemberRoleDao struct {
 	internalAdminMemberRoleDao
 }
 
 var (
-	// AdminMemberRole is globally common accessible object for table hg_admin_member_role operations.
+	// AdminMemberRole is globally common accessible object for table admin_member_role operations.
 	AdminMemberRole = adminMemberRoleDao{
 		internal.NewAdminMemberRoleDao(),
 	}

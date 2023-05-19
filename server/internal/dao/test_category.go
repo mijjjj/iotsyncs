@@ -11,14 +11,14 @@ import (
 // internalTestCategoryDao is internal type for wrapping internal DAO implements.
 type internalTestCategoryDao = *internal.TestCategoryDao
 
-// testCategoryDao is the data access object for table hg_test_category.
+// testCategoryDao is the data access object for table test_category.
 // You can define custom methods on it to extend its functionality as you wish.
 type testCategoryDao struct {
 	internalTestCategoryDao
 }
 
 var (
-	// TestCategory is globally public accessible object for table hg_test_category operations.
+	// TestCategory is globally public accessible object for table test_category operations.
 	TestCategory = testCategoryDao{
 		internal.NewTestCategoryDao(),
 	}

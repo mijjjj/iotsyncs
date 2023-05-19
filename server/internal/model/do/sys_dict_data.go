@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysDictData is the golang structure of table hg_sys_dict_data for DAO operations like Where/Data.
+// SysDictData is the golang structure of table sys_dict_data for DAO operations like Where/Data.
 type SysDictData struct {
-	g.Meta    `orm:"table:hg_sys_dict_data, do:true"`
+	g.Meta    `orm:"table:sys_dict_data, do:true"`
 	Id        interface{} // 字典数据ID
 	Label     interface{} // 字典标签
 	Value     interface{} // 字典键值

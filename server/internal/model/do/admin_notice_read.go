@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminNoticeRead is the golang structure of table hg_admin_notice_read for DAO operations like Where/Data.
+// AdminNoticeRead is the golang structure of table admin_notice_read for DAO operations like Where/Data.
 type AdminNoticeRead struct {
-	g.Meta    `orm:"table:hg_admin_notice_read, do:true"`
+	g.Meta    `orm:"table:admin_notice_read, do:true"`
 	Id        interface{} // 记录ID
 	NoticeId  interface{} // 公告ID
 	MemberId  interface{} // 会员ID

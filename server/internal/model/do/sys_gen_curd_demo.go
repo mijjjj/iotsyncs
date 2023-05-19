@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysGenCurdDemo is the golang structure of table hg_sys_gen_curd_demo for DAO operations like Where/Data.
+// SysGenCurdDemo is the golang structure of table sys_gen_curd_demo for DAO operations like Where/Data.
 type SysGenCurdDemo struct {
-	g.Meta      `orm:"table:hg_sys_gen_curd_demo, do:true"`
+	g.Meta      `orm:"table:sys_gen_curd_demo, do:true"`
 	Id          interface{} // ID
 	CategoryId  interface{} // 分类ID
 	Title       interface{} // 标题

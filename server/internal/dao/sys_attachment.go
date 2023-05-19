@@ -6,27 +6,28 @@ package dao
 
 import (
 	"context"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gtime"
 	"hotgo/internal/consts"
 	"hotgo/internal/dao/internal"
 	"hotgo/internal/model/input/sysin"
 	"hotgo/internal/service"
 	"hotgo/utility/format"
+
+	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/gogf/gf/v2/frame/g"
+	"github.com/gogf/gf/v2/os/gtime"
 )
 
 // internalSysAttachmentDao is internal type for wrapping internal DAO implements.
 type internalSysAttachmentDao = *internal.SysAttachmentDao
 
-// sysAttachmentDao is the data access object for table hg_sys_attachment.
+// sysAttachmentDao is the data access object for table sys_attachment.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysAttachmentDao struct {
 	internalSysAttachmentDao
 }
 
 var (
-	// SysAttachment is globally public accessible object for table hg_sys_attachment operations.
+	// SysAttachment is globally public accessible object for table sys_attachment operations.
 	SysAttachment = sysAttachmentDao{
 		internal.NewSysAttachmentDao(),
 	}

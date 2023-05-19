@@ -6,23 +6,24 @@ package dao
 
 import (
 	"context"
-	"github.com/gogf/gf/v2/errors/gerror"
 	"hotgo/internal/consts"
 	"hotgo/internal/dao/internal"
 	"hotgo/internal/model/entity"
+
+	"github.com/gogf/gf/v2/errors/gerror"
 )
 
 // internalAdminRoleDao is internal type for wrapping internal DAO implements.
 type internalAdminRoleDao = *internal.AdminRoleDao
 
-// adminRoleDao is the data access object for table hg_admin_role.
+// adminRoleDao is the data access object for table admin_role.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminRoleDao struct {
 	internalAdminRoleDao
 }
 
 var (
-	// AdminRole is globally common accessible object for table hg_admin_role operations.
+	// AdminRole is globally common accessible object for table admin_role operations.
 	AdminRole = adminRoleDao{
 		internal.NewAdminRoleDao(),
 	}

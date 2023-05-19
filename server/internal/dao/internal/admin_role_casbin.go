@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminRoleCasbinDao is the data access object for table hg_admin_role_casbin.
+// AdminRoleCasbinDao is the data access object for table admin_role_casbin.
 type AdminRoleCasbinDao struct {
 	table   string                 // table is the underlying table name of the DAO.
 	group   string                 // group is the database configuration group name of current DAO.
 	columns AdminRoleCasbinColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminRoleCasbinColumns defines and stores column names for table hg_admin_role_casbin.
+// AdminRoleCasbinColumns defines and stores column names for table admin_role_casbin.
 type AdminRoleCasbinColumns struct {
 	Id    string //
 	PType string //
@@ -30,7 +30,7 @@ type AdminRoleCasbinColumns struct {
 	V5    string //
 }
 
-// adminRoleCasbinColumns holds the columns for table hg_admin_role_casbin.
+// adminRoleCasbinColumns holds the columns for table admin_role_casbin.
 var adminRoleCasbinColumns = AdminRoleCasbinColumns{
 	Id:    "id",
 	PType: "p_type",
@@ -46,7 +46,7 @@ var adminRoleCasbinColumns = AdminRoleCasbinColumns{
 func NewAdminRoleCasbinDao() *AdminRoleCasbinDao {
 	return &AdminRoleCasbinDao{
 		group:   "default",
-		table:   "hg_admin_role_casbin",
+		table:   "admin_role_casbin",
 		columns: adminRoleCasbinColumns,
 	}
 }

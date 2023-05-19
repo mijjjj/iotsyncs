@@ -6,22 +6,23 @@ package dao
 
 import (
 	"context"
-	"github.com/gogf/gf/v2/errors/gerror"
 	"hotgo/internal/consts"
 	"hotgo/internal/dao/internal"
+
+	"github.com/gogf/gf/v2/errors/gerror"
 )
 
 // internalSysCronGroupDao is internal type for wrapping internal DAO implements.
 type internalSysCronGroupDao = *internal.SysCronGroupDao
 
-// sysCronGroupDao is the data access object for table hg_sys_cron_group.
+// sysCronGroupDao is the data access object for table sys_cron_group.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysCronGroupDao struct {
 	internalSysCronGroupDao
 }
 
 var (
-	// SysCronGroup is globally public accessible object for table hg_sys_cron_group operations.
+	// SysCronGroup is globally public accessible object for table sys_cron_group operations.
 	SysCronGroup = sysCronGroupDao{
 		internal.NewSysCronGroupDao(),
 	}

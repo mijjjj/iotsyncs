@@ -11,14 +11,14 @@ import (
 // internalPayRefundDao is internal type for wrapping internal DAO implements.
 type internalPayRefundDao = *internal.PayRefundDao
 
-// payRefundDao is the data access object for table hg_pay_refund.
+// payRefundDao is the data access object for table pay_refund.
 // You can define custom methods on it to extend its functionality as you wish.
 type payRefundDao struct {
 	internalPayRefundDao
 }
 
 var (
-	// PayRefund is globally public accessible object for table hg_pay_refund operations.
+	// PayRefund is globally public accessible object for table pay_refund operations.
 	PayRefund = payRefundDao{
 		internal.NewPayRefundDao(),
 	}

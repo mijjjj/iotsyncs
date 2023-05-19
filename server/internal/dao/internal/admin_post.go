@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminPostDao is the data access object for table hg_admin_post.
+// AdminPostDao is the data access object for table admin_post.
 type AdminPostDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns AdminPostColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminPostColumns defines and stores column names for table hg_admin_post.
+// AdminPostColumns defines and stores column names for table admin_post.
 type AdminPostColumns struct {
 	Id        string // 岗位ID
 	Code      string // 岗位编码
@@ -30,7 +30,7 @@ type AdminPostColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// adminPostColumns holds the columns for table hg_admin_post.
+// adminPostColumns holds the columns for table admin_post.
 var adminPostColumns = AdminPostColumns{
 	Id:        "id",
 	Code:      "code",
@@ -46,7 +46,7 @@ var adminPostColumns = AdminPostColumns{
 func NewAdminPostDao() *AdminPostDao {
 	return &AdminPostDao{
 		group:   "default",
-		table:   "hg_admin_post",
+		table:   "admin_post",
 		columns: adminPostColumns,
 	}
 }

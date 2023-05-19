@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// PayLogDao is the data access object for table hg_pay_log.
+// PayLogDao is the data access object for table pay_log.
 type PayLogDao struct {
 	table   string        // table is the underlying table name of the DAO.
 	group   string        // group is the database configuration group name of current DAO.
 	columns PayLogColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// PayLogColumns defines and stores column names for table hg_pay_log.
+// PayLogColumns defines and stores column names for table pay_log.
 type PayLogColumns struct {
 	Id            string // 主键
 	MemberId      string // 会员ID
@@ -52,7 +52,7 @@ type PayLogColumns struct {
 	UpdatedAt     string // 修改时间
 }
 
-// payLogColumns holds the columns for table hg_pay_log.
+// payLogColumns holds the columns for table pay_log.
 var payLogColumns = PayLogColumns{
 	Id:            "id",
 	MemberId:      "member_id",
@@ -90,7 +90,7 @@ var payLogColumns = PayLogColumns{
 func NewPayLogDao() *PayLogDao {
 	return &PayLogDao{
 		group:   "default",
-		table:   "hg_pay_log",
+		table:   "pay_log",
 		columns: payLogColumns,
 	}
 }

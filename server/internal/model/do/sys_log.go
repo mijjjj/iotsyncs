@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysLog is the golang structure of table hg_sys_log for DAO operations like Where/Data.
+// SysLog is the golang structure of table sys_log for DAO operations like Where/Data.
 type SysLog struct {
-	g.Meta     `orm:"table:hg_sys_log, do:true"`
+	g.Meta     `orm:"table:sys_log, do:true"`
 	Id         interface{} // 日志ID
 	ReqId      interface{} // 对外ID
 	AppId      interface{} // 应用ID

@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysConfig is the golang structure of table hg_sys_config for DAO operations like Where/Data.
+// SysConfig is the golang structure of table sys_config for DAO operations like Where/Data.
 type SysConfig struct {
-	g.Meta       `orm:"table:hg_sys_config, do:true"`
+	g.Meta       `orm:"table:sys_config, do:true"`
 	Id           interface{} // 配置ID
 	Group        interface{} // 配置分组
 	Name         interface{} // 参数名称

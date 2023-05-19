@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminNoticeDao is the data access object for table hg_admin_notice.
+// AdminNoticeDao is the data access object for table admin_notice.
 type AdminNoticeDao struct {
 	table   string             // table is the underlying table name of the DAO.
 	group   string             // group is the database configuration group name of current DAO.
 	columns AdminNoticeColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminNoticeColumns defines and stores column names for table hg_admin_notice.
+// AdminNoticeColumns defines and stores column names for table admin_notice.
 type AdminNoticeColumns struct {
 	Id        string // 公告ID
 	Title     string // 公告标题
@@ -36,7 +36,7 @@ type AdminNoticeColumns struct {
 	DeletedAt string // 删除时间
 }
 
-// adminNoticeColumns holds the columns for table hg_admin_notice.
+// adminNoticeColumns holds the columns for table admin_notice.
 var adminNoticeColumns = AdminNoticeColumns{
 	Id:        "id",
 	Title:     "title",
@@ -58,7 +58,7 @@ var adminNoticeColumns = AdminNoticeColumns{
 func NewAdminNoticeDao() *AdminNoticeDao {
 	return &AdminNoticeDao{
 		group:   "default",
-		table:   "hg_admin_notice",
+		table:   "admin_notice",
 		columns: adminNoticeColumns,
 	}
 }

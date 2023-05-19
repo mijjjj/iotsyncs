@@ -11,14 +11,14 @@ import (
 // internalSysServeLogDao is internal type for wrapping internal DAO implements.
 type internalSysServeLogDao = *internal.SysServeLogDao
 
-// sysServeLogDao is the data access object for table hg_sys_serve_log.
+// sysServeLogDao is the data access object for table sys_serve_log.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysServeLogDao struct {
 	internalSysServeLogDao
 }
 
 var (
-	// SysServeLog is globally public accessible object for table hg_sys_serve_log operations.
+	// SysServeLog is globally public accessible object for table sys_serve_log operations.
 	SysServeLog = sysServeLogDao{
 		internal.NewSysServeLogDao(),
 	}

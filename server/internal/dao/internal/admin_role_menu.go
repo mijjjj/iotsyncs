@@ -11,20 +11,20 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminRoleMenuDao is the data access object for table hg_admin_role_menu.
+// AdminRoleMenuDao is the data access object for table admin_role_menu.
 type AdminRoleMenuDao struct {
 	table   string               // table is the underlying table name of the DAO.
 	group   string               // group is the database configuration group name of current DAO.
 	columns AdminRoleMenuColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminRoleMenuColumns defines and stores column names for table hg_admin_role_menu.
+// AdminRoleMenuColumns defines and stores column names for table admin_role_menu.
 type AdminRoleMenuColumns struct {
 	RoleId string // 角色ID
 	MenuId string // 菜单ID
 }
 
-// adminRoleMenuColumns holds the columns for table hg_admin_role_menu.
+// adminRoleMenuColumns holds the columns for table admin_role_menu.
 var adminRoleMenuColumns = AdminRoleMenuColumns{
 	RoleId: "role_id",
 	MenuId: "menu_id",
@@ -34,7 +34,7 @@ var adminRoleMenuColumns = AdminRoleMenuColumns{
 func NewAdminRoleMenuDao() *AdminRoleMenuDao {
 	return &AdminRoleMenuDao{
 		group:   "default",
-		table:   "hg_admin_role_menu",
+		table:   "admin_role_menu",
 		columns: adminRoleMenuColumns,
 	}
 }

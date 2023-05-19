@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysLoginLog is the golang structure of table hg_sys_login_log for DAO operations like Where/Data.
+// SysLoginLog is the golang structure of table sys_login_log for DAO operations like Where/Data.
 type SysLoginLog struct {
-	g.Meta    `orm:"table:hg_sys_login_log, do:true"`
+	g.Meta    `orm:"table:sys_login_log, do:true"`
 	Id        interface{} // 日志ID
 	ReqId     interface{} // 请求ID
 	MemberId  interface{} // 用户ID

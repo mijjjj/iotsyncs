@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminCreditsLogDao is the data access object for table hg_admin_credits_log.
+// AdminCreditsLogDao is the data access object for table admin_credits_log.
 type AdminCreditsLogDao struct {
 	table   string                 // table is the underlying table name of the DAO.
 	group   string                 // group is the database configuration group name of current DAO.
 	columns AdminCreditsLogColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminCreditsLogColumns defines and stores column names for table hg_admin_credits_log.
+// AdminCreditsLogColumns defines and stores column names for table admin_credits_log.
 type AdminCreditsLogColumns struct {
 	Id          string // 变动ID
 	MemberId    string // 管理员ID
@@ -37,7 +37,7 @@ type AdminCreditsLogColumns struct {
 	UpdatedAt   string // 修改时间
 }
 
-// adminCreditsLogColumns holds the columns for table hg_admin_credits_log.
+// adminCreditsLogColumns holds the columns for table admin_credits_log.
 var adminCreditsLogColumns = AdminCreditsLogColumns{
 	Id:          "id",
 	MemberId:    "member_id",
@@ -60,7 +60,7 @@ var adminCreditsLogColumns = AdminCreditsLogColumns{
 func NewAdminCreditsLogDao() *AdminCreditsLogDao {
 	return &AdminCreditsLogDao{
 		group:   "default",
-		table:   "hg_admin_credits_log",
+		table:   "admin_credits_log",
 		columns: adminCreditsLogColumns,
 	}
 }

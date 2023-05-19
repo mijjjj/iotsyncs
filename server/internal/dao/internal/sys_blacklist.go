@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysBlacklistDao is the data access object for table hg_sys_blacklist.
+// SysBlacklistDao is the data access object for table sys_blacklist.
 type SysBlacklistDao struct {
 	table   string              // table is the underlying table name of the DAO.
 	group   string              // group is the database configuration group name of current DAO.
 	columns SysBlacklistColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysBlacklistColumns defines and stores column names for table hg_sys_blacklist.
+// SysBlacklistColumns defines and stores column names for table sys_blacklist.
 type SysBlacklistColumns struct {
 	Id        string // 黑名单ID
 	Ip        string // IP地址
@@ -28,7 +28,7 @@ type SysBlacklistColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// sysBlacklistColumns holds the columns for table hg_sys_blacklist.
+// sysBlacklistColumns holds the columns for table sys_blacklist.
 var sysBlacklistColumns = SysBlacklistColumns{
 	Id:        "id",
 	Ip:        "ip",
@@ -42,7 +42,7 @@ var sysBlacklistColumns = SysBlacklistColumns{
 func NewSysBlacklistDao() *SysBlacklistDao {
 	return &SysBlacklistDao{
 		group:   "default",
-		table:   "hg_sys_blacklist",
+		table:   "sys_blacklist",
 		columns: sysBlacklistColumns,
 	}
 }

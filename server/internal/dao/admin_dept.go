@@ -6,23 +6,24 @@ package dao
 
 import (
 	"context"
-	"github.com/gogf/gf/v2/errors/gerror"
 	"hotgo/internal/consts"
 	"hotgo/internal/dao/internal"
 	"hotgo/internal/model/entity"
+
+	"github.com/gogf/gf/v2/errors/gerror"
 )
 
 // internalAdminDeptDao is internal type for wrapping internal DAO implements.
 type internalAdminDeptDao = *internal.AdminDeptDao
 
-// adminDeptDao is the data access object for table hg_admin_dept.
+// adminDeptDao is the data access object for table admin_dept.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminDeptDao struct {
 	internalAdminDeptDao
 }
 
 var (
-	// AdminDept is globally common accessible object for table hg_admin_dept operations.
+	// AdminDept is globally common accessible object for table admin_dept operations.
 	AdminDept = adminDeptDao{
 		internal.NewAdminDeptDao(),
 	}

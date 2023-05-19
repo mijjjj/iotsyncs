@@ -7,12 +7,13 @@ package casbin
 
 import (
 	"context"
-	"github.com/casbin/casbin/v2"
-	_ "github.com/gogf/gf/contrib/drivers/mysql/v2"
-	"github.com/gogf/gf/v2/frame/g"
 	"hotgo/internal/consts"
 	"net/http"
 	"strings"
+
+	"github.com/casbin/casbin/v2"
+	_ "github.com/gogf/gf/contrib/drivers/mysql/v2"
+	"github.com/gogf/gf/v2/frame/g"
 )
 
 const (
@@ -58,9 +59,9 @@ func loadPermissions(ctx context.Context) {
 		superRoleKey = g.Cfg().MustGet(ctx, "hotgo.admin.superRoleKey")
 	)
 
-	err = g.Model("hg_admin_role r").
-		LeftJoin("hg_admin_role_menu rm", "r.id=rm.role_id").
-		LeftJoin("hg_admin_menu m", "rm.menu_id=m.id").
+	err = g.Model("admin_role r").
+		LeftJoin("admin_role_menu rm", "r.id=rm.role_id").
+		LeftJoin("admin_menu m", "rm.menu_id=m.id").
 		Fields("r.key,m.permissions").
 		Where("r.status", consts.StatusEnabled).
 		Where("m.status", consts.StatusEnabled).

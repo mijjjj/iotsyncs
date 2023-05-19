@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminCreditsLog is the golang structure of table hg_admin_credits_log for DAO operations like Where/Data.
+// AdminCreditsLog is the golang structure of table admin_credits_log for DAO operations like Where/Data.
 type AdminCreditsLog struct {
-	g.Meta      `orm:"table:hg_admin_credits_log, do:true"`
+	g.Meta      `orm:"table:admin_credits_log, do:true"`
 	Id          interface{} // 变动ID
 	MemberId    interface{} // 管理员ID
 	AppId       interface{} // 应用id

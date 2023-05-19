@@ -11,14 +11,14 @@ import (
 // internalAdminRoleCasbinDao is internal type for wrapping internal DAO implements.
 type internalAdminRoleCasbinDao = *internal.AdminRoleCasbinDao
 
-// adminRoleCasbinDao is the data access object for table hg_admin_role_casbin.
+// adminRoleCasbinDao is the data access object for table admin_role_casbin.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminRoleCasbinDao struct {
 	internalAdminRoleCasbinDao
 }
 
 var (
-	// AdminRoleCasbin is globally public accessible object for table hg_admin_role_casbin operations.
+	// AdminRoleCasbin is globally public accessible object for table admin_role_casbin operations.
 	AdminRoleCasbin = adminRoleCasbinDao{
 		internal.NewAdminRoleCasbinDao(),
 	}

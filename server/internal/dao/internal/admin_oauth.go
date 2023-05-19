@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminOauthDao is the data access object for table hg_admin_oauth.
+// AdminOauthDao is the data access object for table admin_oauth.
 type AdminOauthDao struct {
 	table   string            // table is the underlying table name of the DAO.
 	group   string            // group is the database configuration group name of current DAO.
 	columns AdminOauthColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminOauthColumns defines and stores column names for table hg_admin_oauth.
+// AdminOauthColumns defines and stores column names for table admin_oauth.
 type AdminOauthColumns struct {
 	Id           string // 主键
 	MemberId     string // 用户ID
@@ -37,7 +37,7 @@ type AdminOauthColumns struct {
 	UpdatedAt    string // 修改时间
 }
 
-// adminOauthColumns holds the columns for table hg_admin_oauth.
+// adminOauthColumns holds the columns for table admin_oauth.
 var adminOauthColumns = AdminOauthColumns{
 	Id:           "id",
 	MemberId:     "member_id",
@@ -60,7 +60,7 @@ var adminOauthColumns = AdminOauthColumns{
 func NewAdminOauthDao() *AdminOauthDao {
 	return &AdminOauthDao{
 		group:   "default",
-		table:   "hg_admin_oauth",
+		table:   "admin_oauth",
 		columns: adminOauthColumns,
 	}
 }

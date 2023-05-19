@@ -8,9 +8,9 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminRoleCasbin is the golang structure of table hg_admin_role_casbin for DAO operations like Where/Data.
+// AdminRoleCasbin is the golang structure of table admin_role_casbin for DAO operations like Where/Data.
 type AdminRoleCasbin struct {
-	g.Meta `orm:"table:hg_admin_role_casbin, do:true"`
+	g.Meta `orm:"table:admin_role_casbin, do:true"`
 	Id     interface{} //
 	PType  interface{} //
 	V0     interface{} //

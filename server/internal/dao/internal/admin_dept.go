@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminDeptDao is the data access object for table hg_admin_dept.
+// AdminDeptDao is the data access object for table admin_dept.
 type AdminDeptDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns AdminDeptColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminDeptColumns defines and stores column names for table hg_admin_dept.
+// AdminDeptColumns defines and stores column names for table admin_dept.
 type AdminDeptColumns struct {
 	Id        string // 部门ID
 	Pid       string // 父部门ID
@@ -36,7 +36,7 @@ type AdminDeptColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// adminDeptColumns holds the columns for table hg_admin_dept.
+// adminDeptColumns holds the columns for table admin_dept.
 var adminDeptColumns = AdminDeptColumns{
 	Id:        "id",
 	Pid:       "pid",
@@ -58,7 +58,7 @@ var adminDeptColumns = AdminDeptColumns{
 func NewAdminDeptDao() *AdminDeptDao {
 	return &AdminDeptDao{
 		group:   "default",
-		table:   "hg_admin_dept",
+		table:   "admin_dept",
 		columns: adminDeptColumns,
 	}
 }

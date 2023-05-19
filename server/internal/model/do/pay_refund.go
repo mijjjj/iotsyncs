@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// PayRefund is the golang structure of table hg_pay_refund for DAO operations like Where/Data.
+// PayRefund is the golang structure of table pay_refund for DAO operations like Where/Data.
 type PayRefund struct {
-	g.Meta        `orm:"table:hg_pay_refund, do:true"`
+	g.Meta        `orm:"table:pay_refund, do:true"`
 	Id            interface{} // 主键ID
 	MemberId      interface{} // 会员ID
 	AppId         interface{} // 应用ID

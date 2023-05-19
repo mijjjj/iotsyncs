@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysConfigDao is the data access object for table hg_sys_config.
+// SysConfigDao is the data access object for table sys_config.
 type SysConfigDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns SysConfigColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysConfigColumns defines and stores column names for table hg_sys_config.
+// SysConfigColumns defines and stores column names for table sys_config.
 type SysConfigColumns struct {
 	Id           string // 配置ID
 	Group        string // 配置分组
@@ -35,7 +35,7 @@ type SysConfigColumns struct {
 	UpdatedAt    string // 更新时间
 }
 
-// sysConfigColumns holds the columns for table hg_sys_config.
+// sysConfigColumns holds the columns for table sys_config.
 var sysConfigColumns = SysConfigColumns{
 	Id:           "id",
 	Group:        "group",
@@ -56,7 +56,7 @@ var sysConfigColumns = SysConfigColumns{
 func NewSysConfigDao() *SysConfigDao {
 	return &SysConfigDao{
 		group:   "default",
-		table:   "hg_sys_config",
+		table:   "sys_config",
 		columns: sysConfigColumns,
 	}
 }

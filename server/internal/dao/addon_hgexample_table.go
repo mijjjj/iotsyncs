@@ -11,14 +11,14 @@ import (
 // internalAddonHgexampleTableDao is internal type for wrapping internal DAO implements.
 type internalAddonHgexampleTableDao = *internal.AddonHgexampleTableDao
 
-// addonHgexampleTableDao is the data access object for table hg_addon_hgexample_table.
+// addonHgexampleTableDao is the data access object for table addon_hgexample_table.
 // You can define custom methods on it to extend its functionality as you wish.
 type addonHgexampleTableDao struct {
 	internalAddonHgexampleTableDao
 }
 
 var (
-	// AddonHgexampleTable is globally public accessible object for table hg_addon_hgexample_table operations.
+	// AddonHgexampleTable is globally public accessible object for table addon_hgexample_table operations.
 	AddonHgexampleTable = addonHgexampleTableDao{
 		internal.NewAddonHgexampleTableDao(),
 	}

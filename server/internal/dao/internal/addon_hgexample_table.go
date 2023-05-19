@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AddonHgexampleTableDao is the data access object for table hg_addon_hgexample_table.
+// AddonHgexampleTableDao is the data access object for table addon_hgexample_table.
 type AddonHgexampleTableDao struct {
 	table   string                     // table is the underlying table name of the DAO.
 	group   string                     // group is the database configuration group name of current DAO.
 	columns AddonHgexampleTableColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AddonHgexampleTableColumns defines and stores column names for table hg_addon_hgexample_table.
+// AddonHgexampleTableColumns defines and stores column names for table addon_hgexample_table.
 type AddonHgexampleTableColumns struct {
 	Id          string // ID
 	CategoryId  string // 分类ID
@@ -59,7 +59,7 @@ type AddonHgexampleTableColumns struct {
 	DeletedAt   string // 删除时间
 }
 
-// addonHgexampleTableColumns holds the columns for table hg_addon_hgexample_table.
+// addonHgexampleTableColumns holds the columns for table addon_hgexample_table.
 var addonHgexampleTableColumns = AddonHgexampleTableColumns{
 	Id:          "id",
 	CategoryId:  "category_id",
@@ -104,7 +104,7 @@ var addonHgexampleTableColumns = AddonHgexampleTableColumns{
 func NewAddonHgexampleTableDao() *AddonHgexampleTableDao {
 	return &AddonHgexampleTableDao{
 		group:   "default",
-		table:   "hg_addon_hgexample_table",
+		table:   "addon_hgexample_table",
 		columns: addonHgexampleTableColumns,
 	}
 }

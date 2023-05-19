@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// TestCategory is the golang structure of table hg_test_category for DAO operations like Where/Data.
+// TestCategory is the golang structure of table test_category for DAO operations like Where/Data.
 type TestCategory struct {
-	g.Meta      `orm:"table:hg_test_category, do:true"`
+	g.Meta      `orm:"table:test_category, do:true"`
 	Id          interface{} // 分类ID
 	Name        interface{} // 分类名称
 	Description interface{} // 描述

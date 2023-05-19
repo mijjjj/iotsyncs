@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysCronDao is the data access object for table hg_sys_cron.
+// SysCronDao is the data access object for table sys_cron.
 type SysCronDao struct {
 	table   string         // table is the underlying table name of the DAO.
 	group   string         // group is the database configuration group name of current DAO.
 	columns SysCronColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysCronColumns defines and stores column names for table hg_sys_cron.
+// SysCronColumns defines and stores column names for table sys_cron.
 type SysCronColumns struct {
 	Id        string // 任务ID
 	GroupId   string // 分组ID
@@ -34,7 +34,7 @@ type SysCronColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// sysCronColumns holds the columns for table hg_sys_cron.
+// sysCronColumns holds the columns for table sys_cron.
 var sysCronColumns = SysCronColumns{
 	Id:        "id",
 	GroupId:   "group_id",
@@ -54,7 +54,7 @@ var sysCronColumns = SysCronColumns{
 func NewSysCronDao() *SysCronDao {
 	return &SysCronDao{
 		group:   "default",
-		table:   "hg_sys_cron",
+		table:   "sys_cron",
 		columns: sysCronColumns,
 	}
 }

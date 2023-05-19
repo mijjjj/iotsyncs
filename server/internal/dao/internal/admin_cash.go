@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminCashDao is the data access object for table hg_admin_cash.
+// AdminCashDao is the data access object for table admin_cash.
 type AdminCashDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns AdminCashColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminCashColumns defines and stores column names for table hg_admin_cash.
+// AdminCashColumns defines and stores column names for table admin_cash.
 type AdminCashColumns struct {
 	Id        string // ID
 	MemberId  string // 管理员ID
@@ -32,7 +32,7 @@ type AdminCashColumns struct {
 	CreatedAt string // 申请时间
 }
 
-// adminCashColumns holds the columns for table hg_admin_cash.
+// adminCashColumns holds the columns for table admin_cash.
 var adminCashColumns = AdminCashColumns{
 	Id:        "id",
 	MemberId:  "member_id",
@@ -50,7 +50,7 @@ var adminCashColumns = AdminCashColumns{
 func NewAdminCashDao() *AdminCashDao {
 	return &AdminCashDao{
 		group:   "default",
-		table:   "hg_admin_cash",
+		table:   "admin_cash",
 		columns: adminCashColumns,
 	}
 }

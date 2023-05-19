@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysSmsLog is the golang structure of table hg_sys_sms_log for DAO operations like Where/Data.
+// SysSmsLog is the golang structure of table sys_sms_log for DAO operations like Where/Data.
 type SysSmsLog struct {
-	g.Meta    `orm:"table:hg_sys_sms_log, do:true"`
+	g.Meta    `orm:"table:sys_sms_log, do:true"`
 	Id        interface{} // 主键
 	Event     interface{} // 事件
 	Mobile    interface{} // 手机号

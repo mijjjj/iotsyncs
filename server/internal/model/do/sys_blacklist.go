@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysBlacklist is the golang structure of table hg_sys_blacklist for DAO operations like Where/Data.
+// SysBlacklist is the golang structure of table sys_blacklist for DAO operations like Where/Data.
 type SysBlacklist struct {
-	g.Meta    `orm:"table:hg_sys_blacklist, do:true"`
+	g.Meta    `orm:"table:sys_blacklist, do:true"`
 	Id        interface{} // 黑名单ID
 	Ip        interface{} // IP地址
 	Remark    interface{} // 备注

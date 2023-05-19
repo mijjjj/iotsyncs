@@ -203,14 +203,14 @@ database:
   default:
     link: "mysql:hotgo:hg123456.@tcp(127.0.0.1:3306)/hotgo?loc=Local&parseTime=true"
     debug: true
-    Prefix: "hg_"
+    Prefix: ""
 
 
 # 生成代码
 hggen:
   allowedIPs: ["127.0.0.1", "*"]                                      # 白名单，*代表所有，只有允许的IP后台才能使用生成代码功能
   selectDbs: [ "default" ]                                            # 可选生成表的数据库配置名称，支持多库
-  disableTables : ["hg_sys_gen_codes","hg_admin_role_casbin"]         # 禁用的表，禁用以后将不会在选择表中看到
+  disableTables : ["sys_gen_codes","admin_role_casbin"]         # 禁用的表，禁用以后将不会在选择表中看到
   delimiters: ["@{", "}"]                                             # 模板引擎变量分隔符号
   # 生成应用模型，所有生成模板允许自定义，可以参考default模板进行改造
   application:

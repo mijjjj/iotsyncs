@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminNotice is the golang structure of table hg_admin_notice for DAO operations like Where/Data.
+// AdminNotice is the golang structure of table admin_notice for DAO operations like Where/Data.
 type AdminNotice struct {
-	g.Meta    `orm:"table:hg_admin_notice, do:true"`
+	g.Meta    `orm:"table:admin_notice, do:true"`
 	Id        interface{} // 公告ID
 	Title     interface{} // 公告标题
 	Type      interface{} // 公告类型

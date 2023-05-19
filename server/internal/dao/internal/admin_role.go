@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminRoleDao is the data access object for table hg_admin_role.
+// AdminRoleDao is the data access object for table admin_role.
 type AdminRoleDao struct {
 	table   string           // table is the underlying table name of the DAO.
 	group   string           // group is the database configuration group name of current DAO.
 	columns AdminRoleColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminRoleColumns defines and stores column names for table hg_admin_role.
+// AdminRoleColumns defines and stores column names for table admin_role.
 type AdminRoleColumns struct {
 	Id         string // 角色ID
 	Name       string // 角色名称
@@ -35,7 +35,7 @@ type AdminRoleColumns struct {
 	UpdatedAt  string // 更新时间
 }
 
-// adminRoleColumns holds the columns for table hg_admin_role.
+// adminRoleColumns holds the columns for table admin_role.
 var adminRoleColumns = AdminRoleColumns{
 	Id:         "id",
 	Name:       "name",
@@ -56,7 +56,7 @@ var adminRoleColumns = AdminRoleColumns{
 func NewAdminRoleDao() *AdminRoleDao {
 	return &AdminRoleDao{
 		group:   "default",
-		table:   "hg_admin_role",
+		table:   "admin_role",
 		columns: adminRoleColumns,
 	}
 }

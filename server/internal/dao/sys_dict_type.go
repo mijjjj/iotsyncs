@@ -6,23 +6,24 @@ package dao
 
 import (
 	"context"
-	"github.com/gogf/gf/v2/errors/gerror"
 	"hotgo/internal/consts"
 	"hotgo/internal/dao/internal"
 	"hotgo/internal/model/entity"
+
+	"github.com/gogf/gf/v2/errors/gerror"
 )
 
 // internalSysDictTypeDao is internal type for wrapping internal DAO implements.
 type internalSysDictTypeDao = *internal.SysDictTypeDao
 
-// sysDictTypeDao is the data access object for table hg_sys_dict_type.
+// sysDictTypeDao is the data access object for table sys_dict_type.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysDictTypeDao struct {
 	internalSysDictTypeDao
 }
 
 var (
-	// SysDictType is globally common accessible object for table hg_sys_dict_type operations.
+	// SysDictType is globally common accessible object for table sys_dict_type operations.
 	SysDictType = sysDictTypeDao{
 		internal.NewSysDictTypeDao(),
 	}

@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// AdminNoticeReadDao is the data access object for table hg_admin_notice_read.
+// AdminNoticeReadDao is the data access object for table admin_notice_read.
 type AdminNoticeReadDao struct {
 	table   string                 // table is the underlying table name of the DAO.
 	group   string                 // group is the database configuration group name of current DAO.
 	columns AdminNoticeReadColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// AdminNoticeReadColumns defines and stores column names for table hg_admin_notice_read.
+// AdminNoticeReadColumns defines and stores column names for table admin_notice_read.
 type AdminNoticeReadColumns struct {
 	Id        string // 记录ID
 	NoticeId  string // 公告ID
@@ -28,7 +28,7 @@ type AdminNoticeReadColumns struct {
 	CreatedAt string // 阅读时间
 }
 
-// adminNoticeReadColumns holds the columns for table hg_admin_notice_read.
+// adminNoticeReadColumns holds the columns for table admin_notice_read.
 var adminNoticeReadColumns = AdminNoticeReadColumns{
 	Id:        "id",
 	NoticeId:  "notice_id",
@@ -42,7 +42,7 @@ var adminNoticeReadColumns = AdminNoticeReadColumns{
 func NewAdminNoticeReadDao() *AdminNoticeReadDao {
 	return &AdminNoticeReadDao{
 		group:   "default",
-		table:   "hg_admin_notice_read",
+		table:   "admin_notice_read",
 		columns: adminNoticeReadColumns,
 	}
 }

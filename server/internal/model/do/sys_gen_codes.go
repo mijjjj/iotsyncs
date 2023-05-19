@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysGenCodes is the golang structure of table hg_sys_gen_codes for DAO operations like Where/Data.
+// SysGenCodes is the golang structure of table sys_gen_codes for DAO operations like Where/Data.
 type SysGenCodes struct {
-	g.Meta        `orm:"table:hg_sys_gen_codes, do:true"`
+	g.Meta        `orm:"table:sys_gen_codes, do:true"`
 	Id            interface{} // 生成ID
 	GenType       interface{} // 生成类型
 	GenTemplate   interface{} // 生成模板

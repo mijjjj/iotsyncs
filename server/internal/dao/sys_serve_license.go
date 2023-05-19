@@ -11,14 +11,14 @@ import (
 // internalSysServeLicenseDao is internal type for wrapping internal DAO implements.
 type internalSysServeLicenseDao = *internal.SysServeLicenseDao
 
-// sysServeLicenseDao is the data access object for table hg_sys_serve_license.
+// sysServeLicenseDao is the data access object for table sys_serve_license.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysServeLicenseDao struct {
 	internalSysServeLicenseDao
 }
 
 var (
-	// SysServeLicense is globally public accessible object for table hg_sys_serve_license operations.
+	// SysServeLicense is globally public accessible object for table sys_serve_license operations.
 	SysServeLicense = sysServeLicenseDao{
 		internal.NewSysServeLicenseDao(),
 	}

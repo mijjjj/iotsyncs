@@ -11,14 +11,14 @@ import (
 // internalSysCronDao is internal type for wrapping internal DAO implements.
 type internalSysCronDao = *internal.SysCronDao
 
-// sysCronDao is the data access object for table hg_sys_cron.
+// sysCronDao is the data access object for table sys_cron.
 // You can define custom methods on it to extend its functionality as you wish.
 type sysCronDao struct {
 	internalSysCronDao
 }
 
 var (
-	// SysCron is globally public accessible object for table hg_sys_cron operations.
+	// SysCron is globally public accessible object for table sys_cron operations.
 	SysCron = sysCronDao{
 		internal.NewSysCronDao(),
 	}

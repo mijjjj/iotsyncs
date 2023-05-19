@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysDictTypeDao is the data access object for table hg_sys_dict_type.
+// SysDictTypeDao is the data access object for table sys_dict_type.
 type SysDictTypeDao struct {
 	table   string             // table is the underlying table name of the DAO.
 	group   string             // group is the database configuration group name of current DAO.
 	columns SysDictTypeColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysDictTypeColumns defines and stores column names for table hg_sys_dict_type.
+// SysDictTypeColumns defines and stores column names for table sys_dict_type.
 type SysDictTypeColumns struct {
 	Id        string // 字典类型ID
 	Pid       string // 父类字典类型ID
@@ -31,7 +31,7 @@ type SysDictTypeColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// sysDictTypeColumns holds the columns for table hg_sys_dict_type.
+// sysDictTypeColumns holds the columns for table sys_dict_type.
 var sysDictTypeColumns = SysDictTypeColumns{
 	Id:        "id",
 	Pid:       "pid",
@@ -48,7 +48,7 @@ var sysDictTypeColumns = SysDictTypeColumns{
 func NewSysDictTypeDao() *SysDictTypeDao {
 	return &SysDictTypeDao{
 		group:   "default",
-		table:   "hg_sys_dict_type",
+		table:   "sys_dict_type",
 		columns: sysDictTypeColumns,
 	}
 }

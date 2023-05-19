@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysProvinces is the golang structure of table hg_sys_provinces for DAO operations like Where/Data.
+// SysProvinces is the golang structure of table sys_provinces for DAO operations like Where/Data.
 type SysProvinces struct {
-	g.Meta    `orm:"table:hg_sys_provinces, do:true"`
+	g.Meta    `orm:"table:sys_provinces, do:true"`
 	Id        interface{} // 省市区ID
 	Title     interface{} // 栏目名称
 	Pinyin    interface{} // 拼音

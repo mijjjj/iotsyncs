@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysProvincesDao is the data access object for table hg_sys_provinces.
+// SysProvincesDao is the data access object for table sys_provinces.
 type SysProvincesDao struct {
 	table   string              // table is the underlying table name of the DAO.
 	group   string              // group is the database configuration group name of current DAO.
 	columns SysProvincesColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysProvincesColumns defines and stores column names for table hg_sys_provinces.
+// SysProvincesColumns defines and stores column names for table sys_provinces.
 type SysProvincesColumns struct {
 	Id        string // 省市区ID
 	Title     string // 栏目名称
@@ -34,7 +34,7 @@ type SysProvincesColumns struct {
 	UpdatedAt string // 更新时间
 }
 
-// sysProvincesColumns holds the columns for table hg_sys_provinces.
+// sysProvincesColumns holds the columns for table sys_provinces.
 var sysProvincesColumns = SysProvincesColumns{
 	Id:        "id",
 	Title:     "title",
@@ -54,7 +54,7 @@ var sysProvincesColumns = SysProvincesColumns{
 func NewSysProvincesDao() *SysProvincesDao {
 	return &SysProvincesDao{
 		group:   "default",
-		table:   "hg_sys_provinces",
+		table:   "sys_provinces",
 		columns: sysProvincesColumns,
 	}
 }

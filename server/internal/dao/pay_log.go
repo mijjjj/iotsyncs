@@ -11,14 +11,14 @@ import (
 // internalPayLogDao is internal type for wrapping internal DAO implements.
 type internalPayLogDao = *internal.PayLogDao
 
-// payLogDao is the data access object for table hg_pay_log.
+// payLogDao is the data access object for table pay_log.
 // You can define custom methods on it to extend its functionality as you wish.
 type payLogDao struct {
 	internalPayLogDao
 }
 
 var (
-	// PayLog is globally public accessible object for table hg_pay_log operations.
+	// PayLog is globally public accessible object for table pay_log operations.
 	PayLog = payLogDao{
 		internal.NewPayLogDao(),
 	}

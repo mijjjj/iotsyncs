@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysAddonsConfig is the golang structure of table hg_sys_addons_config for DAO operations like Where/Data.
+// SysAddonsConfig is the golang structure of table sys_addons_config for DAO operations like Where/Data.
 type SysAddonsConfig struct {
-	g.Meta       `orm:"table:hg_sys_addons_config, do:true"`
+	g.Meta       `orm:"table:sys_addons_config, do:true"`
 	Id           interface{} // 配置ID
 	AddonName    interface{} // 插件名称
 	Group        interface{} // 分组

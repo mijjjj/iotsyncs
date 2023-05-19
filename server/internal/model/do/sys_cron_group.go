@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysCronGroup is the golang structure of table hg_sys_cron_group for DAO operations like Where/Data.
+// SysCronGroup is the golang structure of table sys_cron_group for DAO operations like Where/Data.
 type SysCronGroup struct {
-	g.Meta    `orm:"table:hg_sys_cron_group, do:true"`
+	g.Meta    `orm:"table:sys_cron_group, do:true"`
 	Id        interface{} // 任务分组ID
 	Pid       interface{} // 父类任务分组ID
 	Name      interface{} // 分组名称

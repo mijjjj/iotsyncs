@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysAttachmentDao is the data access object for table hg_sys_attachment.
+// SysAttachmentDao is the data access object for table sys_attachment.
 type SysAttachmentDao struct {
 	table   string               // table is the underlying table name of the DAO.
 	group   string               // group is the database configuration group name of current DAO.
 	columns SysAttachmentColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysAttachmentColumns defines and stores column names for table hg_sys_attachment.
+// SysAttachmentColumns defines and stores column names for table sys_attachment.
 type SysAttachmentColumns struct {
 	Id        string // 文件ID
 	AppId     string // 应用ID
@@ -39,7 +39,7 @@ type SysAttachmentColumns struct {
 	UpdatedAt string // 修改时间
 }
 
-// sysAttachmentColumns holds the columns for table hg_sys_attachment.
+// sysAttachmentColumns holds the columns for table sys_attachment.
 var sysAttachmentColumns = SysAttachmentColumns{
 	Id:        "id",
 	AppId:     "app_id",
@@ -64,7 +64,7 @@ var sysAttachmentColumns = SysAttachmentColumns{
 func NewSysAttachmentDao() *SysAttachmentDao {
 	return &SysAttachmentDao{
 		group:   "default",
-		table:   "hg_sys_attachment",
+		table:   "sys_attachment",
 		columns: sysAttachmentColumns,
 	}
 }

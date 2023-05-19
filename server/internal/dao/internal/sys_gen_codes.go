@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysGenCodesDao is the data access object for table hg_sys_gen_codes.
+// SysGenCodesDao is the data access object for table sys_gen_codes.
 type SysGenCodesDao struct {
 	table   string             // table is the underlying table name of the DAO.
 	group   string             // group is the database configuration group name of current DAO.
 	columns SysGenCodesColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysGenCodesColumns defines and stores column names for table hg_sys_gen_codes.
+// SysGenCodesColumns defines and stores column names for table sys_gen_codes.
 type SysGenCodesColumns struct {
 	Id            string // 生成ID
 	GenType       string // 生成类型
@@ -36,7 +36,7 @@ type SysGenCodesColumns struct {
 	UpdatedAt     string // 更新时间
 }
 
-// sysGenCodesColumns holds the columns for table hg_sys_gen_codes.
+// sysGenCodesColumns holds the columns for table sys_gen_codes.
 var sysGenCodesColumns = SysGenCodesColumns{
 	Id:            "id",
 	GenType:       "gen_type",
@@ -58,7 +58,7 @@ var sysGenCodesColumns = SysGenCodesColumns{
 func NewSysGenCodesDao() *SysGenCodesDao {
 	return &SysGenCodesDao{
 		group:   "default",
-		table:   "hg_sys_gen_codes",
+		table:   "sys_gen_codes",
 		columns: sysGenCodesColumns,
 	}
 }

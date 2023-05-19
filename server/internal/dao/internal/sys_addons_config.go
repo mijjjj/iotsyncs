@@ -11,14 +11,14 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-// SysAddonsConfigDao is the data access object for table hg_sys_addons_config.
+// SysAddonsConfigDao is the data access object for table sys_addons_config.
 type SysAddonsConfigDao struct {
 	table   string                 // table is the underlying table name of the DAO.
 	group   string                 // group is the database configuration group name of current DAO.
 	columns SysAddonsConfigColumns // columns contains all the column names of Table for convenient usage.
 }
 
-// SysAddonsConfigColumns defines and stores column names for table hg_sys_addons_config.
+// SysAddonsConfigColumns defines and stores column names for table sys_addons_config.
 type SysAddonsConfigColumns struct {
 	Id           string // 配置ID
 	AddonName    string // 插件名称
@@ -36,7 +36,7 @@ type SysAddonsConfigColumns struct {
 	UpdatedAt    string // 更新时间
 }
 
-// sysAddonsConfigColumns holds the columns for table hg_sys_addons_config.
+// sysAddonsConfigColumns holds the columns for table sys_addons_config.
 var sysAddonsConfigColumns = SysAddonsConfigColumns{
 	Id:           "id",
 	AddonName:    "addon_name",
@@ -58,7 +58,7 @@ var sysAddonsConfigColumns = SysAddonsConfigColumns{
 func NewSysAddonsConfigDao() *SysAddonsConfigDao {
 	return &SysAddonsConfigDao{
 		group:   "default",
-		table:   "hg_sys_addons_config",
+		table:   "sys_addons_config",
 		columns: sysAddonsConfigColumns,
 	}
 }

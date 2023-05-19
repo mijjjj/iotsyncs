@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminOauth is the golang structure of table hg_admin_oauth for DAO operations like Where/Data.
+// AdminOauth is the golang structure of table admin_oauth for DAO operations like Where/Data.
 type AdminOauth struct {
-	g.Meta       `orm:"table:hg_admin_oauth, do:true"`
+	g.Meta       `orm:"table:admin_oauth, do:true"`
 	Id           interface{} // 主键
 	MemberId     interface{} // 用户ID
 	Unionid      interface{} // 唯一ID

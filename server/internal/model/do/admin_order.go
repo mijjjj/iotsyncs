@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminOrder is the golang structure of table hg_admin_order for DAO operations like Where/Data.
+// AdminOrder is the golang structure of table admin_order for DAO operations like Where/Data.
 type AdminOrder struct {
-	g.Meta             `orm:"table:hg_admin_order, do:true"`
+	g.Meta             `orm:"table:admin_order, do:true"`
 	Id                 interface{} // 主键
 	MemberId           interface{} // 管理员id
 	OrderType          interface{} // 订单类型

@@ -9,9 +9,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// AdminDept is the golang structure of table hg_admin_dept for DAO operations like Where/Data.
+// AdminDept is the golang structure of table admin_dept for DAO operations like Where/Data.
 type AdminDept struct {
-	g.Meta    `orm:"table:hg_admin_dept, do:true"`
+	g.Meta    `orm:"table:admin_dept, do:true"`
 	Id        interface{} // 部门ID
 	Pid       interface{} // 父部门ID
 	Name      interface{} // 部门名称

@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// PayLog is the golang structure of table hg_pay_log for DAO operations like Where/Data.
+// PayLog is the golang structure of table pay_log for DAO operations like Where/Data.
 type PayLog struct {
-	g.Meta        `orm:"table:hg_pay_log, do:true"`
+	g.Meta        `orm:"table:pay_log, do:true"`
 	Id            interface{} // 主键
 	MemberId      interface{} // 会员ID
 	AppId         interface{} // 应用ID

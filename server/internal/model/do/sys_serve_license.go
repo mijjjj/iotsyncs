@@ -10,9 +10,9 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 )
 
-// SysServeLicense is the golang structure of table hg_sys_serve_license for DAO operations like Where/Data.
+// SysServeLicense is the golang structure of table sys_serve_license for DAO operations like Where/Data.
 type SysServeLicense struct {
-	g.Meta       `orm:"table:hg_sys_serve_license, do:true"`
+	g.Meta       `orm:"table:sys_serve_license, do:true"`
 	Id           interface{} // 许可ID
 	Group        interface{} // 分组
 	Name         interface{} // 许可名称

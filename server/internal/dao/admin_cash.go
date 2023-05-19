@@ -11,14 +11,14 @@ import (
 // internalAdminCashDao is internal type for wrapping internal DAO implements.
 type internalAdminCashDao = *internal.AdminCashDao
 
-// adminCashDao is the data access object for table hg_admin_cash.
+// adminCashDao is the data access object for table admin_cash.
 // You can define custom methods on it to extend its functionality as you wish.
 type adminCashDao struct {
 	internalAdminCashDao
 }
 
 var (
-	// AdminCash is globally public accessible object for table hg_admin_cash operations.
+	// AdminCash is globally public accessible object for table admin_cash operations.
 	AdminCash = adminCashDao{
 		internal.NewAdminCashDao(),
 	}
